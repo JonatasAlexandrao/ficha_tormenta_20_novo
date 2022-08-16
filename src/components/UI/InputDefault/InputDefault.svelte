@@ -41,20 +41,20 @@ readonly={readonly}
 
 <style>
 
-.txt_input {
-  width: 97%;
-  height: 80%;
-  aspect-ratio: 9/1;
-  font-size: 2rem;
-  text-align: center;
-  background-color: var(--color-input);
-  color: inherit;
-  justify-self: center;
+  .txt_input {
+    width: 97%;
+    height: 80%;
+    aspect-ratio: 9/1;
+    font-size: 2rem;
+    text-align: center;
+    background-color: var(--color-input);
+    color: inherit;
+    justify-self: center;
 
-}
+  }
 
-.txt_input.-character { height: auto; margin: .5% 5% 0; }
+  .txt_input.-character { height: auto; margin: .5% 5% 0; }
 
-.txt_input:focus { outline: 2px solid var(--color-input-selected); }
+  .txt_input:focus { outline: 2px solid var(--color-input-selected); }
   
 </style>
