@@ -4,7 +4,7 @@
   export let nameInput:string
   export let caracterLength: number = 8
   export let className: string = 'default'
-  export let maxlength: number = 10
+  export let maxlength: number = 200
   export let readonly:boolean = false
 
   export let value = ''
@@ -53,6 +53,13 @@ readonly={readonly}
     justify-self: center;
 
   }
+
+  .txt_input.s-1   { font-size: 1.8rem; }
+  .txt_input.s-2   { font-size: 1.6rem; }
+  .txt_input.s-3   { font-size: 1.5rem; }
+  .txt_input.s-4   { font-size: 1.4rem; }
+  .txt_input.s-5   { font-size: 1.35rem; }
+  .txt_input.small { font-size: 1.25rem; }
 
   .txt_input.-character { height: auto; margin: .5% 5% 0; }
 
