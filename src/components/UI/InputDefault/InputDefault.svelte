@@ -1,10 +1,11 @@
-<script>
+<script lang="ts">
 
-  export let nameInput = ''
-  export let caracterLength = 8
-  export let className = 'default'
-  export let maxlength = ''
-  export let readonly = false
+  
+  export let nameInput:string
+  export let caracterLength: number = 8
+  export let className: string = 'default'
+  export let maxlength: number = 10
+  export let readonly:boolean = false
 
   export let value = ''
     $: fontSize = value.length > caracterLength ? calcFontSize() : ''

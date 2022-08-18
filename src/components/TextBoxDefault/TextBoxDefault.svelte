@@ -8,7 +8,7 @@
   export let valueLevel = ''
   export let text = ''
   export let nameInput = ''
-  export let caracterLength
+  export let caracterLength = 0
 
 </script>
 

@@ -1,14 +1,15 @@
-<script>
+<script lang="ts">
   import InputDefault from '../UI/InputDefault/InputDefault.svelte'
   import SvgCharacter from './SvgCharacter.svelte';
 
   export let value = ''
 
+
 </script>
 
 <div class="container_txt -character">
 
-  <InputDefault className='character' nameInput='character' caracterLength=25 bind:value={value} />
+  <InputDefault className='character' nameInput='character' caracterLength={5} bind:value={value} />
   <label class="txt_label -character" for="character">Personagem</label>
 
   <SvgCharacter />
