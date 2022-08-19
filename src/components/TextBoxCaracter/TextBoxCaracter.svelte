@@ -2,7 +2,7 @@
   import InputDefault from '../UI/InputDefault/InputDefault.svelte'
   import SvgCharacter from './SvgCharacter.svelte';
 
-  export let value = ''
+  export let value: string = ''
 
 
 </script>

@@ -1,15 +1,17 @@
 <script lang="ts">
 
   
-  export let nameInput:string
-  export let caracterLength: number = 8
+  export let nameInput: string
+  export let caracterLength: number
+  export let value: string
+    $: fontSize = value.length > caracterLength ? calcFontSize() : ''
+  
+  export let valueLevel: number = 1
   export let className: string = 'default'
   export let maxlength: number = 200
-  export let readonly:boolean = false
-
-  export let value = ''
-    $: fontSize = value.length > caracterLength ? calcFontSize() : ''
-  export let valueLevel = ''
+  export let readonly: boolean = false
+  
+  
 
   function calcFontSize() {
     const result = value.length - caracterLength
@@ -50,7 +52,6 @@ readonly={readonly}
     text-align: center;
     background-color: var(--color-input);
     color: inherit;
-    justify-self: center;
 
   }
 
