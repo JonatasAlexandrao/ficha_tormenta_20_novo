@@ -12,30 +12,21 @@
 
 </script>
 
-<div class="container">
-  <label class="txt_label -default -{nameInput}" for={nameInput}> {text} </label>
 
 <div class="container_txt -{nameInput}">
+
+  <label class="txt_label -default -{nameInput}" for={nameInput}> {text} </label>
+
+  <InputDefault nameInput={nameInput} caracterLength={caracterLength} bind:value={value} bind:valueLevel={valueLevel} />
+
   <SvgLeftSide />
   <SvgRightSide />
 
-  <InputDefault nameInput={nameInput} caracterLength={caracterLength} bind:value={value} bind:valueLevel={valueLevel} />
-  
 </div>
 
-</div>
 
 
 <style>
-
-  .container {
-    height: 100%;
-
-    display: grid;
-    grid-template-rows: 1.3rem 3.2rem;
-    align-items: center;
-    
-  }
 
   .container_txt {
     position: relative;
@@ -45,7 +36,7 @@
     justify-self: center;
 
     width: 95%;
-    height: 100%;
+    height: var(--text-box-height);
 
     background-color: var(--color-fill);
   }
@@ -72,11 +63,7 @@
     background-color: var(--color-stroke);
   }
 
-  /*.container_txt.-player { height: 3.2rem; margin-bottom: .8rem;}*/
-
-  /*.container_txt.-race { width: 17%; }
-  .container_txt.-origin { width: 25%; }
-  .container_txt.-divinity { width: 17%; }*/
+  .container_txt.-player { margin-bottom: .7rem;}
 
   .container_txt.-class-level {
     display: grid;
@@ -84,26 +71,20 @@
   }
 
   .txt_label.-default {
-
-    height: 100%;
-    justify-self: left;
-    margin-left: 10px;
-    font-size: var(--font-size);
-    text-transform: uppercase;
-    /*position: absolute;
-    bottom: 3%;
-    left: 1%;
-    transform: translateY(100%);
-
-    font-size: var(--font-size);
-    text-transform: uppercase;
-
     position: absolute;
+    bottom: 0;
+    left: 0;
 
-    text-transform: uppercase;  */
+    transform: translateY(102%) translateX(5%);
+
+    font-size: var(--font-size);
+    text-transform: uppercase;
   }
 
-  .txt_label.-default.-player { bottom: 155%; }
+  .txt_label.-default.-player { 
+    top: 0;
+    transform: translateY(-50%) translateX(5%);
+  } 
 
 
 </style>

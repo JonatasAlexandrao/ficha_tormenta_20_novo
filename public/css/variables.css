@@ -1,15 +1,10 @@
-
-@font-face {
-  font-family: 'Tormenta20';
-  src: url('./font/Tormenta.ttf');
-}
-
 :root { 
-  font-size: 10px;
-  font-family: Quattrocento Sans, sans-serif;
 
-  /* ========== Variavel Fonte =========== */
-  --font-size-default: clamp(1em, .5em + 1.3vw, 2.8em);
+  /* ========== Box Size ============ */
+  --text-box-height-default: 3.2rem;
+
+  /* ========== Font Size =========== */
+  --font-size-default: 1.3rem;
 
   /* ======== Variaveis Default ======== */
   --color-font-default: rgb(23, 23, 23);
@@ -40,9 +35,9 @@
   --color-fill-dark: #00a98a;
   */
   
-  /* ======== Variaveis ======== */
+  /* ======== Variáveis ======== */
   --font-size: var(--font-size-default);
-
+  --text-box-height: var(--text-box-height-default);
 
   --color-font: var(--color-font-default);
 
@@ -56,20 +51,3 @@
   --color-icon: var(--color-icon-light);
 
 }
-
-/*================= Global ====================*/
-body {
-  background-color: var(--color-background);
-  color: var(--color-font);
-
-  display: flex;
-  justify-content: center;
-
-  /*APAGAR DEPOIS*/
-  /*align-items: center;
-  height: 100vh;
-  background-color: rgb(88, 88, 88);*/
-
-}
-
-label { text-align: center; }

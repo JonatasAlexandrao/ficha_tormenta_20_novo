@@ -1,0 +1,27 @@
+
+@font-face {
+  font-family: 'Tormenta20';
+  src: url('./font/Tormenta.ttf');
+}
+
+:root { 
+  font-size: 10px;
+  font-family: Quattrocento Sans, sans-serif;
+}
+
+/*================= Global ====================*/
+body {
+  background-color: var(--color-background);
+  color: var(--color-font);
+
+  display: flex;
+  justify-content: center;
+
+  /*APAGAR DEPOIS*/
+  /*align-items: center;
+  height: 100vh;
+  background-color: rgb(88, 88, 88);*/
+
+}
+
+label { text-align: center; }

@@ -1,17 +1,20 @@
 <script lang="ts">
 
+  import ImageAndPoints from "./structure/ImageAndPoints/ImageAndPoints.svelte";
   import BasicInfos from "./structure/BasicInfos/BasicInfos.svelte";
-
-  import TextBoxDefault from "./components/TextBoxDefault/TextBoxDefault.svelte";
   
 </script>
 
 <main class="page">
 
-  <div class="teste"> <TextBoxDefault nameInput='player' text='Jogador' /> </div>
+  <!-- <div class="teste"> <TextBoxDefault nameInput='player' text='Jogador' /> </div> -->
 
+  <div class="container_logo">
+    <img class="logo" src="../public/images/logo-tormenta.png" alt="logo">
+  </div>
 
   <BasicInfos />
+  <ImageAndPoints />
 
   
 
@@ -20,6 +23,9 @@
 
 <style>
   .teste {
+
+    display: flex;
+    justify-content: center;
     width: 60vw;
     height: 300px;
 
@@ -58,6 +64,20 @@
     background-image: url("../images/Fundos/Fundo-pagina.jpg");
     background-repeat: no-repeat;
     background-size: cover;
+  }
+
+  .container_logo {
+    width: 100%;
+    height: 5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 2.5rem;
+    
+  }
+
+  .container_logo > img {
+    height: 100%;
   }
 
 

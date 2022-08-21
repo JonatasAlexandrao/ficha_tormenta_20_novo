@@ -37,7 +37,7 @@
     left: 5%;
     transform: translateY(100%);
 
-    font-size: var(--font-size);
+    font-size: calc(var(--font-size) + .4rem);
     font-family: Tormenta20, sans-serif;
     text-transform: uppercase;   
   }
