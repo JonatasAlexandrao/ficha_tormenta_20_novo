@@ -1,107 +1,109 @@
-<script>
-  import { fetchSvg } from '../../utils/functionSVG'
+<script lang="ts">
+  import SvgLeftSide from './SvgLeftSide.svelte';
+  import SvgRightSide from './SvgRightSide.svelte';
+
   import InputDefault from '../UI/InputDefault/InputDefault.svelte'
 
-  export let value = ''
-  export let valueLevel = ''
-  export let text = ''
-  export let nameInput = ''
-  export let caracterLength
+  export let text: string
+  export let nameInput: string
+  export let value: string = ''
+  export let valueLevel: number = 1
+  export let caracterLength: number = 0
 
 </script>
 
-<div class="container_txt -{nameInput}">
-  <img src="../../../public/images/TextBox/lateral-padrao-E.svg" alt="" use:fetchSvg>
-  <img src="../../../public/images/TextBox/lateral-padrao-D.svg" alt="" use:fetchSvg>
-
+<div class="container">
   <label class="txt_label -default -{nameInput}" for={nameInput}> {text} </label>
+
+<div class="container_txt -{nameInput}">
+  <SvgLeftSide />
+  <SvgRightSide />
+
   <InputDefault nameInput={nameInput} caracterLength={caracterLength} bind:value={value} bind:valueLevel={valueLevel} />
   
 </div>
 
+</div>
+
+
 <style>
 
-.container_txt {
-  position: relative;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  justify-self: center;
+  .container {
+    height: 100%;
 
-  width: 95%;
+    display: grid;
+    grid-template-rows: 1.3rem 3.2rem;
+    align-items: center;
+    
+  }
 
-  background-color: var(--color-fill);
-}
+  .container_txt {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-self: center;
 
-.container_txt.-race { width: 17%; }
-.container_txt.-origin { width: 25%; }
-.container_txt.-divinity { width: 17%; }
+    width: 95%;
+    height: 100%;
 
-.container_txt.-class-level {
-  display: grid;
-  grid-template-columns: 80% 20%;
-}
+    background-color: var(--color-fill);
+  }
 
-.container_txt::after {
-  content: '';
-  display: block;
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 5%;
-  background-color: var(--color-stroke);
-}
+  .container_txt::after {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 5%;
+    background-color: var(--color-stroke);
+  }
 
-.container_txt::before {
-  content: '';
-  display: block;
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  height: 5%;
-  background-color: var(--color-stroke);
-}
+  .container_txt::before {
+    content: '';
+    display: block;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 5%;
+    background-color: var(--color-stroke);
+  }
 
-.txt_label.-default {
-  position: absolute;
-  bottom: 3%;
-  left: 1%;
-  transform: translateY(100%);
+  /*.container_txt.-player { height: 3.2rem; margin-bottom: .8rem;}*/
 
-  font-size: var(--font-size);
-  text-transform: uppercase;
-  
-  position: absolute;
+  /*.container_txt.-race { width: 17%; }
+  .container_txt.-origin { width: 25%; }
+  .container_txt.-divinity { width: 17%; }*/
 
-  text-transform: uppercase;  
-}
-.txt_label.-default.-player {
-  bottom: 140%;
-}
+  .container_txt.-class-level {
+    display: grid;
+    grid-template-columns: 80% 20%;
+  }
 
-:global(.container_txt .side_edge) {
-  position: absolute;
-  height: 100%;
-  top: 50%; 
-}
+  .txt_label.-default {
 
-:global(.container_txt .side_edge.-left) {
-  left: .5%;
-  transform: translateY(-50%) translateX(-100%);
-}
+    height: 100%;
+    justify-self: left;
+    margin-left: 10px;
+    font-size: var(--font-size);
+    text-transform: uppercase;
+    /*position: absolute;
+    bottom: 3%;
+    left: 1%;
+    transform: translateY(100%);
 
-:global(.container_txt .side_edge.-right) {
-  right: .5%;
-  transform: translateY(-50%) translateX(100%);
-}
+    font-size: var(--font-size);
+    text-transform: uppercase;
 
-:global(.container_txt .side_edge > path) {
-  fill: var(--color-fill);
-  stroke:var(--color-stroke);
-  stroke-width:1;
-}
+    position: absolute;
+
+    text-transform: uppercase;  */
+  }
+
+  .txt_label.-default.-player { bottom: 155%; }
 
 
 </style>

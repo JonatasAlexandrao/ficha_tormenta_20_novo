@@ -1,41 +1,64 @@
-<script>
-  import TextBoxCaracter from "./components/TextBoxCaracter/TextBoxCaracter.svelte";
-  import TextBoxDefault from "./components/TextBoxDefault/TextBoxDefault.svelte"
+<script lang="ts">
 
+  import BasicInfos from "./structure/BasicInfos/BasicInfos.svelte";
+
+  import TextBoxDefault from "./components/TextBoxDefault/TextBoxDefault.svelte";
+  
 </script>
 
-<main>
-  <div class="wrapper_test">
-    <TextBoxCaracter />
-    <TextBoxDefault nameInput="class-level" text="Jogador" valueLevel=1/>
-  </div>
+<main class="page">
+
+  <div class="teste"> <TextBoxDefault nameInput='player' text='Jogador' /> </div>
+
+
+  <BasicInfos />
+
+  
+
 </main>
+ 
 
 <style>
-  main {
-    
-  }
-
-  .wrapper_test {
-    display: grid;
-    align-items: center;
-
-    position: relative;
-    width: 50vw;
-    height: 50vh;
+  .teste {
+    width: 60vw;
+    height: 300px;
 
     background-color: darkcyan;
-    z-index: 1;
+
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    z-index: 99999;
+
   }
 
-  .teste {
-    background-color: brown;
-    width: 70vw;
-    aspect-ratio: 5/1;
+  .page {
+    min-width: 80rem;
+    max-width: 80rem;
+    height: 100%;
+    height: 100vh;
 
-    display: grid;
-    justify-content: center;
-    align-items: center;
+    position: relative;
+    padding: 2rem 3rem;
   }
- 
+
+  .page::after {
+    content: '';
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 0;
+    min-width: 80rem;
+    max-width: 80rem;
+    height: 100%;
+    z-index: -1;
+    opacity: .6;
+    
+    background-image: url("../images/Fundos/Fundo-pagina.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+
 </style>
