@@ -47,7 +47,6 @@ readonly={readonly}
   .txt_input {
     width: 97%;
     height: 80%;
-    aspect-ratio: 9/1;
     font-size: 2rem;
     text-align: center;
     background-color: var(--color-input);
@@ -62,7 +61,11 @@ readonly={readonly}
   .txt_input.s-5   { font-size: 1.35rem; }
   .txt_input.small { font-size: 1.25rem; }
 
-  .txt_input.-character { height: auto; margin: .5% 5% 0; }
+  .txt_input.-character { 
+    height: auto; 
+    margin: .5% 5% 0;
+    aspect-ratio: 9/1;
+   }
 
   .txt_input:focus { outline: 2px solid var(--color-input-selected); }
   

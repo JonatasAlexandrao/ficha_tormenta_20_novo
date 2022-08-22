@@ -18,5 +18,16 @@
 
 
 <style>
+
+svg {
+  width: 100%;
+  height: 100%;
+}
+
+svg path, svg polygon  {
+  fill: var(--color-fill);
+  stroke:var(--color-stroke);
+  stroke-width: 1px;
+}
   
 </style>

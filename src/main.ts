@@ -1,6 +1,6 @@
-import '../public/css/reset.css'
-import '../public/css/global.css'
-import '../public/css/variables.css'
+import './assets/css/reset.css'
+import './assets/css/global.css'
+import './assets/css/variables.css'
 import App from './App.svelte'
 
 const app = new App({

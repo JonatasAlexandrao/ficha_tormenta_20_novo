@@ -1,7 +1,7 @@
 
 @font-face {
   font-family: 'Tormenta20';
-  src: url('./font/Tormenta.ttf');
+  src: url('../font/Tormenta.ttf');
 }
 
 :root { 

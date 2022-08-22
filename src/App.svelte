@@ -2,15 +2,17 @@
 
   import ImageAndPoints from "./structure/ImageAndPoints/ImageAndPoints.svelte";
   import BasicInfos from "./structure/BasicInfos/BasicInfos.svelte";
+
+  import HealthMana from "./components/HealthMana/HealthMana.svelte";
   
 </script>
 
 <main class="page">
 
-  <!-- <div class="teste"> <TextBoxDefault nameInput='player' text='Jogador' /> </div> -->
+  <!-- <HealthMana /> -->
 
   <div class="container_logo">
-    <img class="logo" src="../public/images/logo-tormenta.png" alt="logo">
+    <img class="logo" src="src/assets/images/logo-tormenta.png" alt="logo">
   </div>
 
   <BasicInfos />
@@ -22,7 +24,7 @@
  
 
 <style>
-  .teste {
+   .teste {
 
     display: flex;
     justify-content: center;
@@ -37,7 +39,7 @@
     transform: translateX(-50%) translateY(-50%);
     z-index: 99999;
 
-  }
+  } 
 
   .page {
     min-width: 80rem;
@@ -61,7 +63,7 @@
     z-index: -1;
     opacity: .6;
     
-    background-image: url("../images/Fundos/Fundo-pagina.jpg");
+    background-image: url("./assets/images/Fundo-pagina.jpg");
     background-repeat: no-repeat;
     background-size: cover;
   }
