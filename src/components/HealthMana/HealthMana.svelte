@@ -12,7 +12,6 @@
 
 
 <div class="container_health_mana -{subClass}">
-
   <div class="container_max_points">
     <InputDefault className='max_points' nameInput='points_{subClass}' maxlength={3} caracterLength={2} bind:value={valuePoints} />
     <span class="text_max">Máximos</span>
@@ -34,24 +33,14 @@
 <style>
 
 .container_health_mana {
+
   position: relative;
   /*width: 90%;*/
   height: 8rem;
   aspect-ratio: 3/1;
 
-  /*justify-self: center;*/
 }
 
-.container_health_mana.-health {
-  grid-area: health;
-  margin: .5rem 0;
-}
-
-.container_health_mana.-mana {
-  grid-area: mana;
-  margin: 1rem;
-  background-color: rgba(200, 51, 192, 0.3);
-}
 
 .container_max_points {
   width: 33%;

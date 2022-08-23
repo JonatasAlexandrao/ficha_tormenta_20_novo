@@ -16,7 +16,15 @@
   </div>
 
   <BasicInfos />
-  <ImageAndPoints />
+  
+  <div class="container_info">
+    <section class="content_left">
+      <ImageAndPoints />
+    </section>
+    <section class="content_right">
+
+    </section>
+  </div>
 
   
 
@@ -24,23 +32,6 @@
  
 
 <style>
-   .teste {
-
-    display: flex;
-    justify-content: center;
-    width: 60vw;
-    height: 300px;
-
-    background-color: darkcyan;
-
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    transform: translateX(-50%) translateY(-50%);
-    z-index: 99999;
-
-  } 
-
   .page {
     min-width: 80rem;
     max-width: 80rem;
@@ -78,8 +69,17 @@
     
   }
 
-  .container_logo > img {
-    height: 100%;
+  .container_logo > img { height: 100%; }
+
+  .container_info {
+    display: grid;
+    grid-template-columns: 60% 40%;
+  }
+
+  .content_right {
+    width: 100%;
+    background-color: cornflowerblue;
+    height: 100vh;
   }
 
 
