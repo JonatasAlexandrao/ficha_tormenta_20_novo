@@ -11,12 +11,12 @@
 </script>
 
 
-<div class="container_health_mana -{subClass}">
-  <div class="container_max_points">
+<div class="container -{subClass}">
+  <div class="content_max_points">
     <InputDefault className='max_points' nameInput='points_{subClass}' maxlength={3} caracterLength={2} bind:value={valuePoints} />
     <span class="text_max">Máximos</span>
   </div>
-  <div class="container_historic">
+  <div class="content_historic">
     <span class="text_title">Pontos de {text}</span>
     <InputDefault className='historic' nameInput='_historic_{subClass}' caracterLength={13} bind:value={valueHistoric} />
     <span class="text_current">Atuais</span>
@@ -32,17 +32,15 @@
 
 <style>
 
-.container_health_mana {
-
+.container {
   position: relative;
-  /*width: 90%;*/
-  height: 8rem;
+  height: 8.5rem;
   aspect-ratio: 3/1;
-
 }
 
+.container.-health { margin-bottom: 1rem; }
 
-.container_max_points {
+.content_max_points {
   width: 33%;
   height: 100%;
   position: absolute;
@@ -53,7 +51,7 @@
   flex-direction: column;
 }
 
-.container_historic {
+.content_historic {
   width: 67%;
   height: 100%;
   position: absolute;
@@ -70,24 +68,24 @@
   font-family: Tormenta20, Arial, sans-serif;
   text-align: center;
 
-  font-size: .8rem;
+  font-size: 1rem;
   width: 100%;
-  margin-right: 41%;
+  margin-right: 37%;
   padding: 4% 0;
 }
 
 .text_max {
   width: 100%;
   text-align: center;
-  font-size: .8rem;
+  font-size: 1rem;
   padding: 3%;
 }
 
 .text_current {
-  font-size: .8rem;
+  font-size: 1rem;
   width: 100%;
   text-align: center;
-  margin-right: 38%;
+  margin-right: 37%;
   padding: 4% 0;
 
 }

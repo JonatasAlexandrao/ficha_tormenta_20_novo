@@ -36,6 +36,8 @@
     justify-items: center;
     row-gap: 1rem;
 
+    margin-bottom: 3rem;
+
   }
 
   .line_1 {

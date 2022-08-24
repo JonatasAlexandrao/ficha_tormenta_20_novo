@@ -36,7 +36,6 @@
     min-width: 80rem;
     max-width: 80rem;
     height: 100%;
-    height: 100vh;
 
     position: relative;
     padding: 2rem 3rem;
