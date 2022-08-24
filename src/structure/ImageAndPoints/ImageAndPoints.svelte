@@ -3,9 +3,6 @@
   import HealthMana from "../../components/HealthMana/HealthMana.svelte";
   import { VAR_health, VAR_mana } from '../../utils/store.js';
 
-  let teste = '22'
-
-
 </script>
 
 <section class="container">
@@ -13,13 +10,11 @@
     <div class="image"></div>
   </div>
   
-  <!-- <HealthMana text="vida" subClass="health" bind:valuePoints={$VAR_health.points} bind:valueHistoric={$VAR_health.historic} />
-  <HealthMana text="mana" subClass="mana" bind:valuePoints={$VAR_mana.points} bind:valueHistoric={$VAR_mana.historic}/> -->
   <div class="content_health_mana">
-    <HealthMana text="vida" subClass="health" bind:valuePoints={teste} bind:valueHistoric={$VAR_health.historic} />
-    <HealthMana text="mana" subClass="mana" bind:valuePoints={teste} bind:valueHistoric={$VAR_mana.historic}/>
-
+    <HealthMana text="vida" subClass="health" bind:valuePoints={$VAR_health.points} bind:valueHistoric={$VAR_health.historic} />
+    <HealthMana text="mana" subClass="mana" bind:valuePoints={$VAR_mana.points} bind:valueHistoric={$VAR_mana.historic}/>
   </div>
+
   
 </section>
 
@@ -30,6 +25,7 @@
     width: 100%;
     display: grid;
     grid-template-columns: 35% 65%;
+    margin-bottom: 2rem;
 
   }
 

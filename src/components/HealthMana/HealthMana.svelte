@@ -21,11 +21,7 @@
     <InputDefault className='historic' nameInput='_historic_{subClass}' caracterLength={13} bind:value={valueHistoric} />
     <span class="text_current">Atuais</span>
   </div>
-
   
-  
-  
-
   <SvgHealthMana />
 
   </div>

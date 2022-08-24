@@ -1,7 +1,9 @@
 <script lang="ts">
 
-  import ImageAndPoints from "./structure/ImageAndPoints/ImageAndPoints.svelte";
+  
   import BasicInfos from "./structure/BasicInfos/BasicInfos.svelte";
+  import ImageAndPoints from "./structure/ImageAndPoints/ImageAndPoints.svelte";
+  import Attributes from "./structure/Attributes/Attributes.svelte";
 
   import HealthMana from "./components/HealthMana/HealthMana.svelte";
   
@@ -20,6 +22,7 @@
   <div class="container_info">
     <section class="content_left">
       <ImageAndPoints />
+      <Attributes />
     </section>
     <section class="content_right">
 
@@ -50,7 +53,7 @@
     min-width: 80rem;
     max-width: 80rem;
     height: 100%;
-    z-index: -1;
+    z-index: -10;
     opacity: .6;
     
     background-image: url("./assets/images/Fundo-pagina.jpg");
@@ -72,7 +75,9 @@
 
   .container_info {
     display: grid;
-    grid-template-columns: 60% 40%;
+    grid-template-columns: 58% 38%;
+    gap: 2rem;
+    justify-content: center;
   }
 
   .content_right {

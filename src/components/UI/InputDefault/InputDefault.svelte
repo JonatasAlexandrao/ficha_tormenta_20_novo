@@ -2,12 +2,12 @@
 
   
   export let nameInput: string
-  export let caracterLength: number
   export let value: string
     $: fontSize = value.length > caracterLength ? calcFontSize() : ''
   
   export let valueLevel: number = 1
   export let className: string = 'default'
+  export let caracterLength: number = 5
   export let maxlength: number = 200
   export let readonly: boolean = false
   
@@ -45,8 +45,8 @@ readonly={readonly}
 <style>
 
   .txt_input {
-    width: 97%;
-    height: 80%;
+    width: 100%;
+    height: 100%;
     font-size: 2rem;
     text-align: center;
     background-color: var(--color-input);
@@ -61,11 +61,25 @@ readonly={readonly}
   .txt_input.s-5   { font-size: 1.35rem; }
   .txt_input.small { font-size: 1.25rem; }
 
+  .txt_input.-max_points.s-1 { font-size: 2.3rem; }
+
+  .txt_input.-default,
+  .txt_input.-level { 
+    width: 97%; height: 80%;
+   }
+
   .txt_input.-character { 
     height: auto; 
     margin: .5% 5% 0;
     aspect-ratio: 9/1;
-   }
+  }
+
+  .txt_input.-max_points { 
+    font-size: 3.5rem;
+    padding: 0;
+  }
+  
+  .txt_input.-attribute { border-radius: 2rem;}
 
   .txt_input:focus { outline: 2px solid var(--color-input-selected); }
   
