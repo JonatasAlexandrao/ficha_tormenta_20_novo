@@ -4,6 +4,7 @@
   import BasicInfos from "./structure/BasicInfos/BasicInfos.svelte";
   import ImageAndPoints from "./structure/ImageAndPoints/ImageAndPoints.svelte";
   import Attributes from "./structure/Attributes/Attributes.svelte";
+  import AttackBox from "./components/AttackBox/AttackBox.svelte";
 
   import HealthMana from "./components/HealthMana/HealthMana.svelte";
   
@@ -23,6 +24,7 @@
     <section class="content_left">
       <ImageAndPoints />
       <Attributes />
+      <AttackBox />
     </section>
     <section class="content_right">
 
