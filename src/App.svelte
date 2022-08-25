@@ -1,18 +1,16 @@
 <script lang="ts">
 
   
-  import BasicInfos from "./structure/BasicInfos/BasicInfos.svelte";
-  import ImageAndPoints from "./structure/ImageAndPoints/ImageAndPoints.svelte";
-  import Attributes from "./structure/Attributes/Attributes.svelte";
+  import BasicInfos from "./components/BasicInfos/BasicInfos.svelte";
+  import ImageAndPoints from "./components/ImageAndPoints/ImageAndPoints.svelte";
+  import Attributes from "./components/Attributes/Attributes.svelte";
   import AttackBox from "./components/AttackBox/AttackBox.svelte";
+  import BlockDefenses from "./components/BlockDefenses/BlockDefenses.svelte";
 
-  import HealthMana from "./components/HealthMana/HealthMana.svelte";
   
 </script>
 
 <main class="page">
-
-  <!-- <HealthMana /> -->
 
   <div class="container_logo">
     <img class="logo" src="src/assets/images/logo-tormenta.png" alt="logo">
@@ -25,6 +23,11 @@
       <ImageAndPoints />
       <Attributes />
       <AttackBox />
+
+      <div class="defenses_and_proficiencies">
+        <BlockDefenses />
+      </div>
+
     </section>
     <section class="content_right">
 
@@ -86,6 +89,11 @@
     width: 100%;
     background-color: cornflowerblue;
     height: 100vh;
+  }
+
+  .defenses_and_proficiencies {
+    display: grid;
+    grid-column: 60% 40%;
   }
 
 

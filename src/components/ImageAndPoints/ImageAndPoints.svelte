@@ -1,7 +1,7 @@
 <script lang="ts">
 
-  import HealthMana from "../../components/HealthMana/HealthMana.svelte";
-  import { VAR_health, VAR_mana } from '../../utils/store.js';
+  import HealthMana from "./HealthMana/HealthMana.svelte";
+  import { VAR_health, VAR_mana } from '../../utils/store';
 
 </script>
 

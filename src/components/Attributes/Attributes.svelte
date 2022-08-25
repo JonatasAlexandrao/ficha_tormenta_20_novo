@@ -1,7 +1,7 @@
 <script lang='ts'>
 
-  import { VAR_attributesTotal, VAR_attributesModifier } from '../../utils/store.js'
-  import Attribute from '../../components/Attribute/Attribute.svelte';
+  import { VAR_attributesTotal, VAR_attributesModifier } from '../../utils/store'
+  import Attribute from './Attribute/Attribute.svelte';
 
 </script>
 

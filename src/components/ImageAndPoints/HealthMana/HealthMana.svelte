@@ -1,6 +1,6 @@
 <script lang="ts">
 
-  import InputDefault from '../UI/InputDefault/InputDefault.svelte'
+  import InputDefault from '../../UI/InputDefault/InputDefault.svelte'
   import SvgHealthMana from './SvgHealthMana.svelte'
 
   export let valuePoints = ''

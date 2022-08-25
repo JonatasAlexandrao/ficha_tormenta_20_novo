@@ -2,7 +2,7 @@
   import SvgLeftSide from './SvgLeftSide.svelte';
   import SvgRightSide from './SvgRightSide.svelte';
 
-  import InputDefault from '../UI/InputDefault/InputDefault.svelte'
+  import InputDefault from '../../UI/InputDefault/InputDefault.svelte'
 
   export let text: string
   export let nameInput: string

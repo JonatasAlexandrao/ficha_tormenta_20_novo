@@ -1,9 +1,9 @@
 <script lang="ts">
 
-  import { VAR_character, VAR_player } from '../../utils/store.js'
+  import { VAR_character, VAR_player } from '../../utils/store'
 
-  import TextBoxCaracter from "../../components/TextBoxCaracter/TextBoxCaracter.svelte"
-  import TextBoxDefault from "../../components/TextBoxDefault/TextBoxDefault.svelte";
+  import TextBoxCaracter from "./TextBoxCaracter/TextBoxCaracter.svelte"
+  import TextBoxDefault from "./TextBoxDefault/TextBoxDefault.svelte";
 
 </script>
 

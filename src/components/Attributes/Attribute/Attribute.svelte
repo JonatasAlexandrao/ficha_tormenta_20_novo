@@ -1,6 +1,6 @@
 <script lang="ts">
 
-import InputDefault from '../UI/InputDefault/InputDefault.svelte'
+import InputDefault from '../../UI/InputDefault/InputDefault.svelte'
 import SvgAttribute from './SvgAttribute.svelte'
 
 export let name = ''
