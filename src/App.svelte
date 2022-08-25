@@ -7,10 +7,17 @@
   import AttackBox from "./components/AttackBox/AttackBox.svelte";
   import BlockDefenses from "./components/BlockDefenses/BlockDefenses.svelte";
 
+  import ExperienceBox from "./components/BlockDefenses/ExperienceBox/ExperienceBox.svelte";
+  import DefenceCalc from "./components/BlockDefenses/DefenceCalc/DefenceCalc.svelte";
   
 </script>
 
 <main class="page">
+
+  <div class="teste">
+    <DefenceCalc />
+    <!-- <ExperienceBox /> -->
+  </div>
 
   <div class="container_logo">
     <img class="logo" src="src/assets/images/logo-tormenta.png" alt="logo">
@@ -40,6 +47,13 @@
  
 
 <style>
+  .teste {
+    position: relative;
+    width: 80%;
+    height: 50vh;
+    background-color: darkcyan;
+    z-index: 100;
+  }
   .page {
     min-width: 80rem;
     max-width: 80rem;
@@ -93,7 +107,7 @@
 
   .defenses_and_proficiencies {
     display: grid;
-    grid-column: 60% 40%;
+    grid-template-columns: 60% 40%;
   }
 
 

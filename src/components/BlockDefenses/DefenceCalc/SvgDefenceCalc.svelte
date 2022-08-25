@@ -1,6 +1,6 @@
 
 <svg version="1.1" id="Camada_3" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-	 viewBox="-438.4 251.9 195.2 62.5" style="enable-background:new -438.4 251.9 195.2 62.5;" xml:space="preserve" aria-hidden="true" class="img-defense">
+	 viewBox="-438.4 251.9 195.2 62.5" style="enable-background:new -438.4 251.9 195.2 62.5;" xml:space="preserve" aria-hidden="true" class="svg_default">
 <style type="text/css">
 	.st0{fill:#00A1C6;stroke:#000000;stroke-width:1.5;stroke-miterlimit:10;}
 	.st1{fill:#00A1C6;stroke:#000000;stroke-miterlimit:10;}
@@ -22,17 +22,8 @@
   
   svg {
     height: 100%;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translateX(-50%) translateY(-50%);
-    pointer-events: none;
-    z-index: -1;
+    width: auto;
   }
   
-  path  {
-    fill:var(--color-fill);
-    stroke:var(--color-stroke);
-  }
   
 </style>

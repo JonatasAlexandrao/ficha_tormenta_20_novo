@@ -1,5 +1,5 @@
 
-<svg version="1.1" id="Camada_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+<svg class="svg_default" version="1.1" id="Camada_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 	 viewBox="-323 -39.9 337.8 149.8" style="enable-background:new -323 -39.9 337.8 149.8;" xml:space="preserve">
 <style type="text/css">
 	.st0{fill:#00A1C6;stroke:#000000;stroke-width:1.5;stroke-miterlimit:10;}
@@ -20,19 +20,6 @@ svg{
   background-repeat: no-repeat;
   background-position: center;
   background-size: 94%;
-
-  width: 100%;
-	position: absolute;
-	top: 50%;
-	left: 50%;
-	transform: translateX(-50%) translateY(-50%);
-	pointer-events: none;
-	z-index: -1;
-}
-
-svg polygon{
-  fill: var(--color-fill);
-  stroke:var(--color-stroke);
 }
 
 </style>
