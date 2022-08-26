@@ -52,7 +52,7 @@
   .combo_box {
     width: 100%;
     height: 75%;
-    font-size: 1.3rem;
+    font-size: calc(var(--font-size-default) * 1.3);
     text-align: center;
     cursor: pointer;
     background-color: var(--color-input);
@@ -61,14 +61,14 @@
   .combo_box:focus { outline: 2px solid var(--color-input-selected); }
 
   .combo_box.-modifier {
-    font-size: 1rem;
+    font-size: var(--font-size-default);
   }
   .combo_box.-modifier ~ .listBox li {
-    font-size: 1rem;
+    font-size: var(--font-size-default);
   }
     
   .combo_box.-size {
-    font-size: 1.2rem;
+    font-size: calc(var(--font-size-default) * 1.2);
     width: 90%;
   }
 
@@ -130,7 +130,7 @@
     height: 100%;
     padding: .5rem .8rem;
 
-    font-size: 1.4rem;
+    font-size: calc(var(--font-size-default) * 1.4);
     text-align: center;
     cursor: pointer;
     z-index: 1;

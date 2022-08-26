@@ -74,10 +74,13 @@ function isNumber(num) {
 <style>
 
 .defense_calc {
-  --font-calcDefence-total: 3.3rem;
-  --font-calcDefence-1: 1.2rem;
-  --font-calcDefence-2: 1rem;
-  --font-calcDefence-3: .8rem;
+
+  --font-calcDefence-total: calc(var(--font-size-default) * 3.3);
+  --font-calcDefence-1: calc(var(--font-size-default) * 1.2);
+  --font-calcDefence-2: var(--font-size-default);
+  --font-calcDefence-3: calc(var(--font-size-default) * .8);
+
+  
 
   position: relative;
   width: 100%;
@@ -91,6 +94,7 @@ function isNumber(num) {
 
   /*padding: .4rem .6rem .4rem .4rem;*/
   font-size: var(--font-calcDefence-1);
+  
   
   z-index: 2;
 }

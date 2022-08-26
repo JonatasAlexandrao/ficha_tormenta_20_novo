@@ -53,6 +53,8 @@ import SvgAttackBox from './SvgAttackBox.svelte';
 
     z-index: 1;
 
+    font-size: var(--font-size-default);
+
   }
 
   .table_attack {
@@ -63,7 +65,7 @@ import SvgAttackBox from './SvgAttackBox.svelte';
   td { height: 2.65rem; }
 
   th:first-child {
-    font-size: 1.2rem;
+    font-size: calc(var(--font-size-default) * 1.2);
     text-transform: uppercase;
     width: 30%;
   }

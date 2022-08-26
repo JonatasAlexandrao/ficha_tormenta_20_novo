@@ -1,10 +1,10 @@
 :root { 
-
+  
   /* ========== Box Size ============ */
   --text-box-height-default: 3.2rem;
-
+  
   /* ========== Font Size =========== */
-  --font-size-default: 1.3rem;
+  --font-size-default: 10px;
 
   /* ======== Variaveis Default ======== */
   --color-font-default: rgb(23, 23, 23);
@@ -17,23 +17,6 @@
   --color-alert-default: rgb(172, 0, 0);
 
   --color-icon-light: rgb(222, 222, 222);
-  --color-icon-dark: rgb(23, 23, 23);
-
-  /*--color-background-default: rgb(54, 54, 54);
-  --color-fill-default: #00a98a;
-  --color-stroke-default: rgb(23, 23, 23);
-  --color-input-default: rgba(0, 0, 0, 0.15);
-  --color-input-selected-default: rgb(0, 234, 164);
-  --color-alert-default: rgb(172, 0, 0);*/
-
-  /* ======== Variaveis dark ======== */
-  /*--color-font-dark: rgb(23, 23, 23);
-
-  --color-background-dark: rgb(54, 54, 54);
-  --color-input-dark: rgba(0, 0, 0, 0.2);
-  --color-alert-dark: rgb(172, 0, 0);
-  --color-fill-dark: #00a98a;
-  */
   
   /* ======== Variáveis ======== */
   --font-size: var(--font-size-default);
@@ -50,4 +33,31 @@
 
   --color-icon: var(--color-icon-light);
 
+}
+
+.dark-mode:root {
+   /* ======== Variaveis dark ======== */
+
+  --color-font-dark: rgb(230, 230, 230);
+
+  --color-background-dark: rgb(0, 0, 0);
+  --color-fill-dark: #6b6b6b;
+  --color-stroke-dark: rgb(0, 0, 0);
+  --color-input-dark: rgba(211, 211, 211, 0.15);
+  --color-input-selected-dark: rgb(172, 50, 52);
+  --color-alert-dark: rgb(172, 0, 0);
+
+  --color-icon-dark: rgb(23, 23, 23);
+
+  /* ======== Variáveis ======== */
+  
+
+  --color-background: var(--color-background-dark);
+  --color-fill: var(--color-fill-dark);
+  --color-stroke: var(--color-stroke-dark);
+  --color-input: var(--color-input-dark);
+  --color-input-selected: var(--color-input-selected-dark);
+  --color-alert: var(--color-alert-dark);
+
+  --color-icon: var(--color-icon-dark);
 }

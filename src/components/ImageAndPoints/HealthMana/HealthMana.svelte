@@ -32,6 +32,7 @@
   position: relative;
   height: 8.5rem;
   aspect-ratio: 3/1;
+  font-size: var(--font-size-default);
 }
 
 .container.-health { margin-bottom: 1rem; }
@@ -64,7 +65,6 @@
   font-family: Tormenta20, Arial, sans-serif;
   text-align: center;
 
-  font-size: 1rem;
   width: 100%;
   margin-right: 37%;
   padding: 4% 0;
@@ -73,12 +73,10 @@
 .text_max {
   width: 100%;
   text-align: center;
-  font-size: 1rem;
   padding: 3%;
 }
 
 .text_current {
-  font-size: 1rem;
   width: 100%;
   text-align: center;
   margin-right: 37%;

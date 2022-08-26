@@ -35,11 +35,12 @@ export let modifier = ''
 
 .text_title {
   font-family: Tormenta20, sans-serif;
+  font-size: var(--font-size-default);
   text-align: center;
 }
 
 .text_attribute {
-  font-size: 2.7rem;
+  font-size: calc(var(--font-size-default) * 2.7 );
   opacity: .6;
 }
 

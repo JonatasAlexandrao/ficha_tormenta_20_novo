@@ -48,20 +48,33 @@ readonly={readonly}
     width: 100%;
     height: 100%;
     font-size: 2rem;
+    font-size: calc(var(--font-size-default) * 2);
     text-align: center;
     background-color: var(--color-input);
     color: inherit;
 
   }
 
-  .txt_input.s-1   { font-size: 1.8rem; }
-  .txt_input.s-2   { font-size: 1.6rem; }
-  .txt_input.s-3   { font-size: 1.5rem; }
-  .txt_input.s-4   { font-size: 1.4rem; }
-  .txt_input.s-5   { font-size: 1.35rem; }
-  .txt_input.small { font-size: 1.25rem; }
 
-  .txt_input.-max_points.s-1 { font-size: 2.3rem; }
+  .txt_input.s-1 { 
+    font-size: calc(var(--font-size-default) * 1.8);
+  }
+  .txt_input.s-2 { 
+    font-size: calc(var(--font-size-default) * 1.6);
+  }
+  .txt_input.s-3 { 
+    font-size: calc(var(--font-size-default) * 1.5);
+  }
+  .txt_input.s-4 { 
+    font-size: calc(var(--font-size-default) * 1.4); 
+  }
+  .txt_input.s-5 { 
+    font-size: calc(var(--font-size-default) * 1.35); 
+  }
+  .txt_input.small { 
+    font-size: calc(var(--font-size-default) * 1.25); 
+  }
+  .txt_input.-max_points.s-1 { font-size: calc(var(--font-size-default) * 2.3); }
 
   .txt_input.-default,
   .txt_input.-level { 
@@ -75,7 +88,7 @@ readonly={readonly}
   }
 
   .txt_input.-max_points { 
-    font-size: 3.5rem;
+    font-size: calc(var(--font-size-default) * 3.5);
     padding: 0;
   }
   
