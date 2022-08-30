@@ -43,7 +43,7 @@
   .container_combo_box {
     position: relative;
     width: 100%;
-    height: 75%;
+    height: 100%;
 
     display: grid;
     align-items: center;
@@ -52,7 +52,7 @@
   .combo_box {
     width: 100%;
     height: 75%;
-    font-size: calc(var(--font-size-default) * 1.3);
+    font-size: calc(1rem * 1.3);
     text-align: center;
     cursor: pointer;
     background-color: var(--color-input);
@@ -61,14 +61,14 @@
   .combo_box:focus { outline: 2px solid var(--color-input-selected); }
 
   .combo_box.-modifier {
-    font-size: var(--font-size-default);
+    font-size: 1rem;
   }
   .combo_box.-modifier ~ .listBox li {
-    font-size: var(--font-size-default);
+    font-size: 1rem;
   }
     
   .combo_box.-size {
-    font-size: calc(var(--font-size-default) * 1.2);
+    font-size: calc(1rem * 1.2);
     width: 90%;
   }
 
@@ -130,7 +130,7 @@
     height: 100%;
     padding: .5rem .8rem;
 
-    font-size: calc(var(--font-size-default) * 1.4);
+    font-size: calc(1rem * 1.4);
     text-align: center;
     cursor: pointer;
     z-index: 1;

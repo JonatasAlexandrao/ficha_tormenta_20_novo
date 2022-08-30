@@ -5,6 +5,7 @@
 import './assets/css/reset.css'
 import './assets/css/variables.css'
 import './assets/css/global.css'
+import './assets/css/mediaQuery.css'
 
 
 import App from './App.svelte'

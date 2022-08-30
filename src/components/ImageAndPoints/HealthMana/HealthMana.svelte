@@ -32,7 +32,7 @@
   position: relative;
   height: 8.5rem;
   aspect-ratio: 3/1;
-  font-size: var(--font-size-default);
+  font-size: 1rem;
 }
 
 .container.-health { margin-bottom: 1rem; }

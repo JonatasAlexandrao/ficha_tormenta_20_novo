@@ -6,7 +6,7 @@ import SvgArmorAndShield from "./SvgArmorAndShield.svelte";
 
 </script>
 
-<div class="armor_and_shield">
+<!-- <div class="armor_and_shield">
   <div class="columns -name">
     <span class="title -name">Armadura & Escudo</span>
     <div class="container_input_armor_and_shield">
@@ -39,10 +39,58 @@ import SvgArmorAndShield from "./SvgArmorAndShield.svelte";
 
   <SvgArmorAndShield />
   
+</div> -->
+<div class="armor_and_shield">
+  <table>
+    <thead>
+      <tr>
+        <th>Armadura & Escudo</th>
+        <th>Defesa</th>
+        <th>Penalidade</th>
+      </tr>
+    </thead>
+    <tbody>
+
+      <tr>
+        <td>
+          <InputDefault className="description" nameInput="description_armor_and_shield_1" caracterLength={12} value={''} />
+        </td>
+        <td>
+          <InputDefault className="defense_num" nameInput="defense_num_armor_and_shield_1" caracterLength={2} value={''} />
+        </td>
+        <td>
+          <InputDefault className="penalty_num" nameInput="penalty_num_armor_and_shield_1" caracterLength={2} value={''} />
+        </td>
+      </tr>
+      <tr>
+        <td><InputDefault className="description" nameInput="description_armor_and_shield_2" caracterLength={12} value={''} /></td>
+        <td><InputDefault className="defense_num" nameInput="defense_num_armor_and_shield_2" caracterLength={2} value={''} /></td>
+        <td><InputDefault className="penalty_num" nameInput="penalty_num_armor_and_shield_2" caracterLength={2} value={''} /></td>
+      </tr>
+
+    </tbody>
+    
+  </table>
+
+  <SvgArmorAndShield />
 </div>
 
 
 
 <style>
+
+  .armor_and_shield {
+    position: relative;
+    width: 100%;
+    aspect-ratio: 3/1;
+   /* display: grid;
+    grid-template-columns: 54% 20% 20%;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 2%;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;*/
+    margin-bottom: 1rem;
+  }
 
 </style>

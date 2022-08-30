@@ -48,7 +48,7 @@ readonly={readonly}
     width: 100%;
     height: 100%;
     font-size: 2rem;
-    font-size: calc(var(--font-size-default) * 2);
+    font-size: calc(1rem * 2);
     text-align: center;
     background-color: var(--color-input);
     color: inherit;
@@ -57,24 +57,24 @@ readonly={readonly}
 
 
   .txt_input.s-1 { 
-    font-size: calc(var(--font-size-default) * 1.8);
+    font-size: calc(1rem * 1.8);
   }
   .txt_input.s-2 { 
-    font-size: calc(var(--font-size-default) * 1.6);
+    font-size: calc(1rem * 1.6);
   }
   .txt_input.s-3 { 
-    font-size: calc(var(--font-size-default) * 1.5);
+    font-size: calc(1rem * 1.5);
   }
   .txt_input.s-4 { 
-    font-size: calc(var(--font-size-default) * 1.4); 
+    font-size: calc(1rem * 1.4); 
   }
   .txt_input.s-5 { 
-    font-size: calc(var(--font-size-default) * 1.35); 
+    font-size: calc(1rem * 1.35); 
   }
   .txt_input.small { 
-    font-size: calc(var(--font-size-default) * 1.25); 
+    font-size: calc(1rem * 1.25); 
   }
-  .txt_input.-max_points.s-1 { font-size: calc(var(--font-size-default) * 2.3); }
+  .txt_input.-max_points.s-1 { font-size: calc(1rem * 2.3); }
 
   .txt_input.-default,
   .txt_input.-level { 
@@ -88,7 +88,7 @@ readonly={readonly}
   }
 
   .txt_input.-max_points { 
-    font-size: calc(var(--font-size-default) * 3.5);
+    font-size: calc(1rem * 3.5);
     padding: 0;
   }
   

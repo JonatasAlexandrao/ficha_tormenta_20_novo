@@ -12,8 +12,9 @@
 <style>
   
   svg {
-    height: 100%;
-    width: auto;
+    /*height: 100%;
+    width: auto;*/
+    width: 100%;
   }
   
   </style>

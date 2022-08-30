@@ -8,7 +8,7 @@
 
 <div class="container_defense_and_experience">
   <DefenceCalc />
-  <!-- <ArmorAndShield /> -->
+  <ArmorAndShield />
   <ExperienceBox />
 </div>
 

@@ -54,7 +54,7 @@ function isNumber(num) {
 
       <div class="column -others">
         <span class="content_title">Outros</span>
-        <div class="container_input_other">
+        <div class="value -input_other">
           <InputDefault className="others" nameInput="defense_calc_others" bind:value={$VAR_otherNumDefense} />
         </div>
       </div>
@@ -75,15 +75,16 @@ function isNumber(num) {
 
 .defense_calc {
 
-  --font-calcDefence-total: calc(var(--font-size-default) * 3.3);
-  --font-calcDefence-1: calc(var(--font-size-default) * 1.2);
-  --font-calcDefence-2: var(--font-size-default);
-  --font-calcDefence-3: calc(var(--font-size-default) * .8);
+  --font-calcDefence-1: calc(1rem * .8);
 
-  
+  --font-calcDefence-2: calc(1rem * 1.1);
+
+  --font-calcDefence-3: calc(1rem * 1.8);
+
+  --font-calcDefence-total: calc(1rem * 3.3);
 
   position: relative;
-  width: 100%;
+  /*width: 26rem;*/
   aspect-ratio: 3.1/1;
  
   display: grid;
@@ -91,11 +92,9 @@ function isNumber(num) {
   justify-content: center;
   justify-items: center;
   align-items: center;
+  margin-bottom: 1rem;
 
-  /*padding: .4rem .6rem .4rem .4rem;*/
   font-size: var(--font-calcDefence-1);
-  
-  
   z-index: 2;
 }
 .container_defense_value {
@@ -105,18 +104,20 @@ function isNumber(num) {
 
   display: grid;
   grid-template-rows: 20% 60% 20%;
+  grid-template-columns: 100%;
   justify-content: center;
   align-items: center;
 }
 
 .defense_title {
   font-family: Tormenta20, sans-serif;
-  font-size: var(--font-calcDefence-1);
+  font-size: var(--font-calcDefence-2);
   text-align: center;
+  padding-left: .2rem;
 }
 
 .defense_value {
-  font-size: var(--font-calcDefence-total);
+  font-size: calc(1rem * 3.3);
   text-align: center;
 }
 
@@ -140,50 +141,49 @@ function isNumber(num) {
 
 
 .container_calc {
-  width: 90%;
-  height: 95%;
+  width: 100%;
+  height: 80%;
   display: grid;
   grid-auto-rows: 70% 25%;
+  justify-items: center;
+  padding: 0 1.4rem; 
 }
 
 .container_top {  
   display: grid;
-  grid-template-columns: repeat(4, 25%);
-
-  width: 100%;
-  /*height: 5rem;*/
-}
-.container_top span {
-  width: 100%;
-  height: 100%;
-
-  display: flex;
+  grid-template-columns: repeat(4, 21%);
   justify-content: center;
-  align-items: center;
+  gap: 4%;
+
+  width: 100%;
 }
 
 .container_top .column {
   position: relative;
-  /*padding: .3rem;*/
-  font-size: var(--font-calcDefence-3);
+  font-size: var(--font-calcDefence-1);
 
   display: grid;
   grid-template-rows: 50% 50%;
+  grid-template-columns: 100%;
   align-items: center;
   text-align: center;
 }
 
+.container_top .column::after {
+  content: '+';
+  position: absolute;
+  top: 70%;
+  left: 0;
+  transform: translateX(-80%) translateY(-50%);
+  font-size: var(--font-calcDefence-3);
+}
+
 .content_title {
   display: grid;
-  justify-content: space-between;
   justify-items: center;
   align-items: center;
   align-content: center;
 }
-
-
-
-
 
 .container_armor_penalty {
   width: 85%;
@@ -194,49 +194,27 @@ function isNumber(num) {
 }
 
 .penalty_text {
-  font-size: var(--font-calcDefence-3);
+  font-size: var(--font-calcDefence-1);
+  padding-bottom: .2rem;
 }
 
 .penalty_value {
   width: 90%;
-  font-size: var(--font-calcDefence-2);
+  font-size: var(--font-calcDefence-3);
   text-align: center;
   border-bottom: #000 2px solid;
 }
 
 .value {
-  font-size: var(--font-calcDefence-2);
-}
-
-/*
-
-
-
-      
-
-.container_top .container::after {
-  content: '+';
-  position: absolute;
-  top: 70%;
-  left: .3rem;
-  transform: translateX(-50%) translateY(-50%);
-  font-size: 1.4rem;
-}
-
-.container_input_other {
-  position: relative;
-  width: 100%;
-  height: 100%;
+  width: 85%;
+  font-size: var(--font-calcDefence-3);
   border-bottom: #000 2px solid;
+  justify-self: center;
 }
 
-.value {
-  position: relative;
-  width: 100%;
-  font-size: 1.4rem;
-  border-bottom: #000 2px solid;
+.value.-input_other {
+  height: 95%;
+  width: 85%;
 }
 
-
-*/
 </style>

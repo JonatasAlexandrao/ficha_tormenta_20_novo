@@ -9,16 +9,24 @@
 
   import ExperienceBox from "./components/BlockDefenses/ExperienceBox/ExperienceBox.svelte";
   import DefenceCalc from "./components/BlockDefenses/DefenceCalc/DefenceCalc.svelte";
+  import ArmorAndShield from "./components/BlockDefenses/ArmorAndShield/ArmorAndShield.svelte";
+  import InputDefault from "./components/UI/InputDefault/InputDefault.svelte";
 
 
-  
+  /*let teste = window.innerWidth
+  function onResize() {
+    teste = window.innerWidth
+  }*/
+
+ 
 </script>
+
+<!-- <svelte:window  on:resize={onResize} /> -->
 
 <main class="page">
 
   <div class="teste">
-    <DefenceCalc />
-    <!-- <ExperienceBox /> -->
+    <ArmorAndShield />
   </div>
 
   <div class="container_logo">
@@ -57,8 +65,9 @@
     z-index: 100;
   }
   .page {
-    min-width: 80rem;
-    max-width: 80rem;
+    /* min-width: 80rem;
+    max-width: 80rem; */
+    width: 80rem;
     height: 100%;
 
     position: relative;
@@ -71,8 +80,9 @@
     position: absolute;
     left: 0;
     top: 0;
-    min-width: 80rem;
-    max-width: 80rem;
+    /* min-width: 80rem;
+    max-width: 80rem; */
+    width: 80rem;
     height: 100%;
     z-index: -10;
     opacity: .6;
