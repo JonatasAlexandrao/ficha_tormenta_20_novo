@@ -53,19 +53,19 @@ import SvgArmorAndShield from "./SvgArmorAndShield.svelte";
 
       <tr>
         <td>
-          <InputDefault className="description" nameInput="description_armor_and_shield_1" caracterLength={12} value={''} />
+          <InputDefault className="armor_shield -description" nameInput="description_armor_and_shield_1" caracterLength={10} value={''} />
         </td>
         <td>
-          <InputDefault className="defense_num" nameInput="defense_num_armor_and_shield_1" caracterLength={2} value={''} />
+          <InputDefault className="armor_shield -defense_num" nameInput="defense_num_armor_and_shield_1" caracterLength={2} value={''} />
         </td>
         <td>
-          <InputDefault className="penalty_num" nameInput="penalty_num_armor_and_shield_1" caracterLength={2} value={''} />
+          <InputDefault className="armor_shield -penalty_num" nameInput="penalty_num_armor_and_shield_1" caracterLength={2} value={''} />
         </td>
       </tr>
       <tr>
-        <td><InputDefault className="description" nameInput="description_armor_and_shield_2" caracterLength={12} value={''} /></td>
-        <td><InputDefault className="defense_num" nameInput="defense_num_armor_and_shield_2" caracterLength={2} value={''} /></td>
-        <td><InputDefault className="penalty_num" nameInput="penalty_num_armor_and_shield_2" caracterLength={2} value={''} /></td>
+        <td><InputDefault className="armor_shield -description" nameInput="description_armor_and_shield_2" caracterLength={10} value={''} /></td>
+        <td><InputDefault className="armor_shield -defense_num" nameInput="defense_num_armor_and_shield_2" caracterLength={2} value={''} /></td>
+        <td><InputDefault className="armor_shield -penalty_num" nameInput="penalty_num_armor_and_shield_2" caracterLength={2} value={''} /></td>
       </tr>
 
     </tbody>
@@ -79,18 +79,46 @@ import SvgArmorAndShield from "./SvgArmorAndShield.svelte";
 
 <style>
 
+  :global(.-armor_shield.-description) {
+    font-size: calc(1rem * 1.8);
+  }
+
   .armor_and_shield {
     position: relative;
     width: 100%;
     aspect-ratio: 3/1;
-   /* display: grid;
-    grid-template-columns: 54% 20% 20%;
-    grid-template-rows: 1fr 1fr 1fr;
-    gap: 2%;
-    justify-content: center;
-    justify-items: center;
-    align-items: center;*/
-    margin-bottom: 1rem;
+    padding: 5%;
   }
+
+  table {
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-rows: 25% 75%;
+  }
+
+  tbody, thead, td, th, tr {
+    width: 100%;
+    height: 100%;
+    display: grid;
+  }
+
+  tbody, thead {
+    align-items: center;
+    align-content: center;
+  }
+
+  tbody {
+    grid-template-rows: 48% 48%;
+    gap: 2%;
+  }
+
+  th { font-size: 1rem; }
+
+  tr {
+    grid-template-columns: 55% 22% 22%;
+    justify-content: space-between;
+  }
+
 
 </style>

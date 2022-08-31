@@ -92,7 +92,6 @@ function isNumber(num) {
   justify-content: center;
   justify-items: center;
   align-items: center;
-  margin-bottom: 1rem;
 
   font-size: var(--font-calcDefence-1);
   z-index: 2;

@@ -55,7 +55,8 @@ readonly={readonly}
 
   }
 
-
+  .txt_input:focus { outline: 2px solid var(--color-input-selected); }
+  
   .txt_input.s-1 { 
     font-size: calc(1rem * 1.8);
   }
@@ -93,7 +94,29 @@ readonly={readonly}
   }
   
   .txt_input.-attribute { border-radius: 2rem;}
+  
+  .txt_input.-armor_shield { 
+    font-size: calc(1rem * 1.6);
+    border-bottom: .2rem solid #000;
+  }
 
-  .txt_input:focus { outline: 2px solid var(--color-input-selected); }
+  .txt_input.-armor_shield.s-4 { 
+    font-size: calc(1rem * 1.5);
+  }
+  .txt_input.-armor_shield.s-5 { 
+    font-size: calc(1rem * 1.4);
+  }
+  .txt_input.-armor_shield.small { 
+    font-size: calc(1rem * 1.3);
+  }
+  /*.txt_input.-armor_shield.s-4 { 
+    font-size: calc(1rem * 1.25); 
+  }
+  .txt_input.-armor_shield.s-5 { 
+    font-size: calc(1rem * 1.20); 
+  }
+  .txt_input.-armor_shield.small { 
+    font-size: calc(1rem * 1.1); 
+  }*/
   
 </style>
