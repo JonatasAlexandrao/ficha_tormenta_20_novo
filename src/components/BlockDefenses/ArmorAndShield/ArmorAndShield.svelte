@@ -88,6 +88,7 @@ import SvgArmorAndShield from "./SvgArmorAndShield.svelte";
     width: 100%;
     aspect-ratio: 3/1;
     padding: 5%;
+    z-index: 2;
   }
 
   table {

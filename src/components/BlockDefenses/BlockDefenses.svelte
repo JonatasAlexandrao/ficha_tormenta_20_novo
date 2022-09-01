@@ -20,7 +20,7 @@
     width: 100%;
     height: 100%;
 
-    background-image: url("../img/Fundos/Fundo-Defesa.svg");
+    background-image: url("../../assets/images/Fundos/Fundo-Defesa.svg");
     background-repeat: no-repeat;
     background-position: top;
     background-size: 100%;

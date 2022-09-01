@@ -20,7 +20,6 @@
   grid-template-columns: repeat(6, 1fr);
   justify-content: center;
   height: 8.5rem;
-  gap: 1rem;
   background-image: url("../../assets/images/Fundos/Fundo-Status.svg"); 
   background-repeat: no-repeat;
   background-position: center;

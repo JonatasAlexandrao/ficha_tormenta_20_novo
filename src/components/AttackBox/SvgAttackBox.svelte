@@ -15,7 +15,7 @@
 
 <style>
 
-svg{ 
+svg { 
   background-image: url("../../assets/images/Fundos/Fundo-Ataque.svg");
   background-repeat: no-repeat;
   background-position: center;

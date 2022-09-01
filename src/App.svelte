@@ -6,11 +6,11 @@
   import Attributes from "./components/Attributes/Attributes.svelte";
   import AttackBox from "./components/AttackBox/AttackBox.svelte";
   import BlockDefenses from "./components/BlockDefenses/BlockDefenses.svelte";
+  import BlockProficiencies from "./components/BlockProficiencies/BlockProficiencies.svelte";
+import ProficiencyBox from "./components/BlockProficiencies/ProficiencyBox/ProficiencyBox.svelte";
 
-  import ExperienceBox from "./components/BlockDefenses/ExperienceBox/ExperienceBox.svelte";
-  import DefenceCalc from "./components/BlockDefenses/DefenceCalc/DefenceCalc.svelte";
-  import ArmorAndShield from "./components/BlockDefenses/ArmorAndShield/ArmorAndShield.svelte";
-  import InputDefault from "./components/UI/InputDefault/InputDefault.svelte";
+
+
 
 
   /*let teste = window.innerWidth
@@ -26,7 +26,7 @@
 <main class="page">
 
   <div class="teste">
-    <ArmorAndShield />
+    <ProficiencyBox />
   </div>
 
   <div class="container_logo">
@@ -43,6 +43,7 @@
 
       <div class="defenses_and_proficiencies">
         <BlockDefenses />
+        <BlockProficiencies />
       </div>
 
     </section>
