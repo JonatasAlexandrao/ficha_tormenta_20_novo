@@ -52,13 +52,13 @@
   .combo_box {
     width: 100%;
     height: 75%;
-    font-size: calc(1rem * 1.3);
+    font-size: 1.3rem;
     text-align: center;
     cursor: pointer;
     background-color: var(--color-input);
   }
 
-  .combo_box:focus { outline: 2px solid var(--color-input-selected); }
+  .combo_box:focus { outline: .2rem solid var(--color-input-selected); }
 
   .combo_box.-modifier {
     font-size: 1rem;
@@ -68,7 +68,7 @@
   }
     
   .combo_box.-size {
-    font-size: calc(1rem * 1.2);
+    font-size: 1.2rem;
     width: 90%;
   }
 
@@ -88,7 +88,7 @@
     margin-top: .5rem;
 
     background-color: var(--color-fill);
-    border: 2px solid var(--color-stroke);
+    border: .2rem solid var(--color-stroke);
     z-index: 1;
     
   }
@@ -109,7 +109,7 @@
     transform: translateY(-100%) translateX(-50%) rotate(45deg);
 
     background-color: var(--color-fill);
-    border: 2px solid var(--color-stroke);
+    border: .2rem solid var(--color-stroke);
   }
 
   .listBox::after {
@@ -130,7 +130,7 @@
     height: 100%;
     padding: .5rem .8rem;
 
-    font-size: calc(1rem * 1.4);
+    font-size: 1.4rem;
     text-align: center;
     cursor: pointer;
     z-index: 1;

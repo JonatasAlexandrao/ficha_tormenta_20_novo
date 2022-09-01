@@ -52,20 +52,17 @@ import SvgAttackBox from './SvgAttackBox.svelte';
     padding: 1rem 1rem 2rem 1rem;
 
     z-index: 1;
-
-    font-size: 1rem;
-
   }
 
   .table_attack {
     border-collapse: collapse;
   }
   tr { height: 16%; }
-  th { width: 14%; }
+  th { width: 14%; font-size: .9rem; }
   td { height: 2.65rem; }
 
   th:first-child {
-    font-size: calc(1rem * 1.2);
+    font-size: 1.3rem;
     text-transform: uppercase;
     width: 30%;
   }

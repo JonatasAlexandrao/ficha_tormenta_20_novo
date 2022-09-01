@@ -40,7 +40,7 @@ export let modifier = ''
 }
 
 .text_attribute {
-  font-size: calc(1rem * 2.7 );
+  font-size: 2.7rem;
   opacity: .6;
 }
 

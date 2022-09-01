@@ -18,7 +18,9 @@
   </div>
   <div class="content_historic">
     <span class="text_title">Pontos de {text}</span>
-    <InputDefault className='historic' nameInput='_historic_{subClass}' caracterLength={13} bind:value={valueHistoric} />
+    <div class="container_input">
+      <InputDefault className='historic' nameInput='_historic_{subClass}' caracterLength={13} bind:value={valueHistoric} />
+    </div>
     <span class="text_current">Atuais</span>
   </div>
   
@@ -32,7 +34,6 @@
   position: relative;
   height: 8.5rem;
   aspect-ratio: 3/1;
-  font-size: 1rem;
 }
 
 .container.-health { margin-bottom: 1rem; }
@@ -51,23 +52,35 @@
 .content_historic {
   width: 67%;
   height: 100%;
+
   position: absolute;
   right: 0;
-  display: flex;
-  justify-content: left;
-  align-items: center;
-  padding-right: 5%;
-  flex-direction: column;
+
+  display: grid;
+  grid-template-rows: 20% 50% 20%;
+  grid-template-columns: 100%;
+  gap: 5%;
+
 }
 
 
 .text_title {
-  font-family: Tormenta20, Arial, sans-serif;
-  text-align: center;
-
   width: 100%;
-  margin-right: 37%;
-  padding: 4% 0;
+  height: 100%;
+
+  display: grid;
+  grid-template-columns: 59% 41%; 
+  align-items: end;
+
+  font-family: Tormenta20, Arial, sans-serif;
+  font-size: 1.1rem;
+  text-align: center;
+}
+
+.container_input {
+  width: 92%;
+  height: 100%;
+
 }
 
 .text_max {
@@ -78,10 +91,16 @@
 
 .text_current {
   width: 100%;
-  text-align: center;
-  margin-right: 37%;
-  padding: 4% 0;
+  height: 100%;
 
+  display: grid;
+  grid-template-columns: 59% 41%; 
+
+  text-align: center;
+}
+
+.text_max, .text_current {
+  font-size: .8rem;
 }
 
 

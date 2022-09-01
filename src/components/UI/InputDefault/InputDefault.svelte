@@ -55,27 +55,27 @@ readonly={readonly}
 
   }
 
-  .txt_input:focus { outline: 2px solid var(--color-input-selected); }
+  .txt_input:focus { outline: .2rem solid var(--color-input-selected); }
   
   .txt_input.s-1 { 
-    font-size: calc(1rem * 1.8);
+    font-size: 1.8rem;
   }
   .txt_input.s-2 { 
-    font-size: calc(1rem * 1.6);
+    font-size: 1.6rem;
   }
   .txt_input.s-3 { 
-    font-size: calc(1rem * 1.5);
+    font-size: 1.5rem;
   }
   .txt_input.s-4 { 
-    font-size: calc(1rem * 1.4); 
+    font-size: 1.4rem; 
   }
   .txt_input.s-5 { 
-    font-size: calc(1rem * 1.35); 
+    font-size: 1.35rem; 
   }
   .txt_input.small { 
-    font-size: calc(1rem * 1.25); 
+    font-size: 1.25rem; 
   }
-  .txt_input.-max_points.s-1 { font-size: calc(1rem * 2.3); }
+  .txt_input.-max_points.s-1 { font-size: 2.3rem; }
 
   .txt_input.-default,
   .txt_input.-level { 
@@ -96,27 +96,27 @@ readonly={readonly}
   .txt_input.-attribute { border-radius: 2rem;}
   
   .txt_input.-armor_shield { 
-    font-size: calc(1rem * 1.6);
+    font-size: 1.6rem;
     border-bottom: .2rem solid #000;
   }
 
   .txt_input.-armor_shield.s-4 { 
-    font-size: calc(1rem * 1.5);
+    font-size: 1.5rem;
   }
   .txt_input.-armor_shield.s-5 { 
-    font-size: calc(1rem * 1.4);
+    font-size: 1.4rem;
   }
   .txt_input.-armor_shield.small { 
-    font-size: calc(1rem * 1.3);
+    font-size: 1.3rem;
   }
   /*.txt_input.-armor_shield.s-4 { 
-    font-size: calc(1rem * 1.25); 
+    font-size: 1.25rem; 
   }
   .txt_input.-armor_shield.s-5 { 
-    font-size: calc(1rem * 1.20); 
+    font-size: 1.20rem; 
   }
   .txt_input.-armor_shield.small { 
-    font-size: calc(1rem * 1.1); 
+    font-size: 1.1rem; 
   }*/
   
 </style>

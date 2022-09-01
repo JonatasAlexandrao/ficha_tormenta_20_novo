@@ -75,13 +75,13 @@ function isNumber(num) {
 
 .defense_calc {
 
-  --font-calcDefence-1: calc(1rem * .8);
+  --font-calcDefence-1: .7rem;
 
-  --font-calcDefence-2: calc(1rem * 1.1);
+  --font-calcDefence-2: 1.1rem;
 
-  --font-calcDefence-3: calc(1rem * 1.8);
+  --font-calcDefence-3: 1.7rem;
 
-  --font-calcDefence-total: calc(1rem * 3.3);
+  --font-calcDefence-total: 3.3rem;
 
   position: relative;
   /*width: 26rem;*/
@@ -116,7 +116,7 @@ function isNumber(num) {
 }
 
 .defense_value {
-  font-size: calc(1rem * 3.3);
+  font-size: 3.3rem;
   text-align: center;
 }
 
@@ -136,9 +136,7 @@ function isNumber(num) {
   content: '';
 }
 
-/*-----------------------------------------*/  
-
-
+/*-----------------------------------------*/
 .container_calc {
   width: 100%;
   height: 80%;
@@ -174,7 +172,7 @@ function isNumber(num) {
   top: 70%;
   left: 0;
   transform: translateX(-80%) translateY(-50%);
-  font-size: var(--font-calcDefence-3);
+  font-size: 1.4rem;
 }
 
 .content_title {
@@ -182,6 +180,8 @@ function isNumber(num) {
   justify-items: center;
   align-items: center;
   align-content: center;
+
+  
 }
 
 .container_armor_penalty {
@@ -201,13 +201,13 @@ function isNumber(num) {
   width: 90%;
   font-size: var(--font-calcDefence-3);
   text-align: center;
-  border-bottom: #000 2px solid;
+  border-bottom: #000 .2rem solid;
 }
 
 .value {
   width: 85%;
   font-size: var(--font-calcDefence-3);
-  border-bottom: #000 2px solid;
+  border-bottom: #000 .2rem solid;
   justify-self: center;
 }
 

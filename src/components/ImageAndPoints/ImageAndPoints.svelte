@@ -41,7 +41,7 @@
   .content_image .image {
     width: 80%;
     height: 95%;
-    border: 3px solid #000;
+    border: .3rem solid #000;
   }
 
   .container .content_health_mana {

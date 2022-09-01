@@ -77,7 +77,7 @@
 
     transform: translateY(102%) translateX(5%);
 
-    font-size: calc(1rem * 1.3);
+    font-size: 1.2rem;
     text-transform: uppercase;
   }
 

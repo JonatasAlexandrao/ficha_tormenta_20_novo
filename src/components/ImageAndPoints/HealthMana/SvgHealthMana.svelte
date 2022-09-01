@@ -27,7 +27,7 @@ svg {
 svg path, svg polygon  {
   fill: var(--color-fill);
   stroke:var(--color-stroke);
-  stroke-width: 1px;
+  stroke-width: .1rem;
 }
   
 </style>

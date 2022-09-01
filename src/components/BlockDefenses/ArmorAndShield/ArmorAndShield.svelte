@@ -80,7 +80,7 @@ import SvgArmorAndShield from "./SvgArmorAndShield.svelte";
 <style>
 
   :global(.-armor_shield.-description) {
-    font-size: calc(1rem * 1.8);
+    font-size: 1.8rem;
   }
 
   .armor_and_shield {
@@ -113,7 +113,7 @@ import SvgArmorAndShield from "./SvgArmorAndShield.svelte";
     gap: 2%;
   }
 
-  th { font-size: 1rem; }
+  th { font-size: .8rem; }
 
   tr {
     grid-template-columns: 55% 22% 22%;
