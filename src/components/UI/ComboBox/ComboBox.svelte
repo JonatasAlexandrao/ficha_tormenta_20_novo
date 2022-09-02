@@ -17,6 +17,16 @@
     const text = this.textContent
     textInput = text
 
+    const input = this.parentElement.previousElementSibling
+
+    if(text.length > 5)
+      input.style.fontSize = "1.2rem"
+    if(text.length > 6)
+      input.style.fontSize = "1.1rem"
+    if(text.length > 8)
+      input.style.fontSize = ".9rem"
+    
+
     list.forEach((item, index) => {
       if(item.name === text) { returnValue(index) }
     })
@@ -28,7 +38,7 @@
   }
 
 </script>
-<div class="container_combo_box" >
+<div class="content_combo_box" >
   <input class="combo_box -{className}" id={idName} type="text" value={textInput} on:click={clickComboBox} readonly on:blur={closedComboBox}>
 
   <ul class="listBox">
@@ -40,7 +50,7 @@
 
 <style>
 
-  .container_combo_box {
+  .content_combo_box {
     position: relative;
     width: 100%;
     height: 100%;
@@ -68,8 +78,8 @@
   }
     
   .combo_box.-size {
-    font-size: 1.2rem;
-    width: 90%;
+    font-size: 1.3rem;
+    padding: 0 5%;
   }
 
   .combo_box.-skill_modifier {

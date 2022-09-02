@@ -18,7 +18,11 @@
   .container_defense_and_experience {
     position: relative;
     width: 100%;
-    height: 100%;
+    height: 21rem;
+
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 8rem 9rem 4rem;
 
     background-image: url("../../assets/images/Fundos/Fundo-Defesa.svg");
     background-repeat: no-repeat;

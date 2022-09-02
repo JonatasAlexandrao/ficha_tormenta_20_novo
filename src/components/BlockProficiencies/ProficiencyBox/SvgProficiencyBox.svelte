@@ -12,8 +12,7 @@
 <style>
 
 svg {
-  height: 100%;
-  
+  top: 45%;
   background-image: url("../../../assets/images/Fundos/Fundo-Proficiencia.svg");
   background-repeat: no-repeat;
   background-position: center;

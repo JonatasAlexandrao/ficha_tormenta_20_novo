@@ -7,7 +7,10 @@
   import AttackBox from "./components/AttackBox/AttackBox.svelte";
   import BlockDefenses from "./components/BlockDefenses/BlockDefenses.svelte";
   import BlockProficiencies from "./components/BlockProficiencies/BlockProficiencies.svelte";
-import ProficiencyBox from "./components/BlockProficiencies/ProficiencyBox/ProficiencyBox.svelte";
+  import Equipment from "./components/Equipment/Equipment.svelte";
+
+
+
 
 
 
@@ -26,7 +29,7 @@ import ProficiencyBox from "./components/BlockProficiencies/ProficiencyBox/Profi
 <main class="page">
 
   <div class="teste">
-    <ProficiencyBox />
+    <Equipment />
   </div>
 
   <div class="container_logo">
@@ -45,6 +48,8 @@ import ProficiencyBox from "./components/BlockProficiencies/ProficiencyBox/Profi
         <BlockDefenses />
         <BlockProficiencies />
       </div>
+
+      <Equipment />
 
     </section>
     <section class="content_right">
@@ -120,7 +125,8 @@ import ProficiencyBox from "./components/BlockProficiencies/ProficiencyBox/Profi
 
   .defenses_and_proficiencies {
     display: grid;
-    grid-template-columns: 60% 40%;
+    grid-template-columns: 58% 40%;
+    gap: 2%;
   }
 
 

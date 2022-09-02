@@ -21,7 +21,11 @@
   .container_proficiency_size_displacement {
     position: relative;
     width: 100%;
-    height: 100%;
+    height: 21rem;
+
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 11rem 5rem 5rem;
 
   }
 

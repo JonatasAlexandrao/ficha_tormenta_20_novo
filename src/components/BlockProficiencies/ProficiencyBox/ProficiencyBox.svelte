@@ -18,16 +18,30 @@ import SvgProficiencyBox from './SvgProficiencyBox.svelte';
     height: 100%;
 
     display: grid;
-    align-content: center;
+    grid-template-rows: 22% 78%;
+    grid-template-columns: 100%;
+    justify-items: center;
+
+    padding: 3.5% 0 7% 0;
     font-size: 1.2rem;
     
     z-index: 1;
   }
 
-  .txt_textarea {
+  .txt_label {
     width: 100%;
-    aspect-ratio: 2/1;
-    padding: .5rem;
+    height: 100%;
+
+    display: grid;
+    justify-content: center;
+    align-items: center;
+
+  }
+
+  .txt_textarea {
+    width: 93%;
+    height: 100%;
+    padding: 2%;
 
     resize: none;
     font-size: 1.2rem;

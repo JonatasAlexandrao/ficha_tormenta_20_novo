@@ -109,14 +109,18 @@ readonly={readonly}
   .txt_input.-armor_shield.small { 
     font-size: 1.3rem;
   }
-  /*.txt_input.-armor_shield.s-4 { 
-    font-size: 1.25rem; 
+
+  .txt_input.-total_weight,
+  .txt_input.-max_weight,
+  .txt_input.-total_lifting {
+    font-size: 1.2rem;
+    background-color: transparent;
+    cursor: default;
+    outline: none;
   }
-  .txt_input.-armor_shield.s-5 { 
-    font-size: 1.20rem; 
+
+  .txt_input.-total_lifting {
+    font-size: 1.4rem;
   }
-  .txt_input.-armor_shield.small { 
-    font-size: 1.1rem; 
-  }*/
   
 </style>
