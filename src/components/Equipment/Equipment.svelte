@@ -134,6 +134,7 @@
     position: relative;
     width: 100%;
     aspect-ratio: 23/1;
+    z-index: -1;
   }
 
   .equipment_bottom::before {
@@ -155,7 +156,7 @@
     background-color: var(--color-fill);
     border-right: .2rem var(--color-stroke) solid;
     border-left: .2rem var(--color-stroke) solid;
-    padding: 1% 3%;
+    padding: 0 3%;
   }
 
   /* === equipment_main === */
@@ -240,22 +241,5 @@
     font-size: 1.4rem;
     justify-self: center;
   }
-  /*.total_money div {
-    display: grid;
-    grid-template-columns: 1fr 85%;
-    align-items: center;
-  }*/
-  /*.total_money div:first-child {
-    margin-bottom: 1rem;
-  }
-  .total_money div {
-    display: grid;
-    grid-template-columns: 1fr 85%;
-    align-items: center;
-  }
-  .total_money label {
-    font-size: 1.4rem;
-    justify-self: center;
-  } */
 
 </style>

@@ -10,6 +10,10 @@
   import Equipment from "./components/Equipment/Equipment.svelte";
 
 
+  
+  import SkillsBox from "./components/SkillsBox/SkillsBox.svelte";
+
+
 
 
 
@@ -29,7 +33,7 @@
 <main class="page">
 
   <div class="teste">
-    <Equipment />
+    <!-- <SkillsBox /> -->
   </div>
 
   <div class="container_logo">
@@ -53,7 +57,7 @@
 
     </section>
     <section class="content_right">
-
+      <SkillsBox />
     </section>
   </div>
 
@@ -112,15 +116,13 @@
 
   .container_info {
     display: grid;
-    grid-template-columns: 58% 38%;
-    gap: 2rem;
-    justify-content: center;
+    grid-template-columns: 57% 42%;
+    gap: 1%;
   }
 
   .content_right {
     width: 100%;
-    background-color: cornflowerblue;
-    height: 100vh;
+    height: 100%;
   }
 
   .defenses_and_proficiencies {

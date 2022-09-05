@@ -122,5 +122,10 @@ readonly={readonly}
   .txt_input.-total_lifting {
     font-size: 1.4rem;
   }
+
+  .txt_input.-skill_other {
+    height: 80%;
+    font-size: 1.4rem;
+  }
   
 </style>
