@@ -1,9 +1,5 @@
 
 <svg version="1.1" id="Camada_4" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="-452 248.9 53.1 65.1" style="enable-background:new -452 248.9 53.1 65.1;" xml:space="preserve" aria-hidden="true" class="svg_default">
-<style type="text/css">
-	.st0{fill:#00A1C6;stroke:#000000;stroke-width:1.5;stroke-miterlimit:10;}
-	.st1{fill:none;stroke:#000000;stroke-miterlimit:10;}
-</style>
 <g>
 	<path class="st0" d="M-403.8,282.1l3.9-2.8l-4-2.7v-13.3l2.2-3.7h-8.1c-1-0.9-1-2.2-1-2.2l1.6-5.8l-3.2,0.5c-2-0.2-2.8-2.2-2.8-2.2
 		h-10h-10c0,0-0.9,1.9-2.8,2.2l-3.2-0.5l1.6,5.8c0,0,0,1.3-1,2.2h-8.1l2.2,3.7v13.3l-4,2.7l3.9,2.8l0,15.3l-1.1,5.1l6.2-2.5l2.8,0.4

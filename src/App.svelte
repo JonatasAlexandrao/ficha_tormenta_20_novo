@@ -8,10 +8,8 @@
   import BlockDefenses from "./components/BlockDefenses/BlockDefenses.svelte";
   import BlockProficiencies from "./components/BlockProficiencies/BlockProficiencies.svelte";
   import Equipment from "./components/Equipment/Equipment.svelte";
-
-
-  
   import SkillsBox from "./components/SkillsBox/SkillsBox.svelte";
+  import IconMenu from "./components/IconMenu/IconMenu.svelte";
 
 
 
@@ -36,6 +34,8 @@
     <!-- <SkillsBox /> -->
   </div>
 
+  <IconMenu />
+  
   <div class="container_logo">
     <img class="logo" src="src/assets/images/logo-tormenta.png" alt="logo">
   </div>
@@ -62,6 +62,9 @@
   </div>
 
   
+  <footer>
+    <hr>
+  </footer>
 
 </main>
  
@@ -75,8 +78,6 @@
     z-index: 100;
   }
   .page {
-    /* min-width: 80rem;
-    max-width: 80rem; */
     width: 80rem;
     height: 100%;
 
@@ -90,8 +91,6 @@
     position: absolute;
     left: 0;
     top: 0;
-    /* min-width: 80rem;
-    max-width: 80rem; */
     width: 80rem;
     height: 100%;
     z-index: -10;
@@ -116,8 +115,8 @@
 
   .container_info {
     display: grid;
-    grid-template-columns: 57% 42%;
-    gap: 1%;
+    grid-template-columns: 56% 42%;
+    gap: 2%;
   }
 
   .content_right {
@@ -129,6 +128,18 @@
     display: grid;
     grid-template-columns: 58% 40%;
     gap: 2%;
+  }
+
+  footer {
+    width: 100%;
+    height: 10rem;
+    padding: 2rem 0;
+  }
+
+  hr {
+    background-color: aliceblue;
+    height: 2px;
+    border-style: none;
   }
 
 

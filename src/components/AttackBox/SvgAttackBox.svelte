@@ -1,9 +1,6 @@
 
 <svg class="svg_default" version="1.1" id="Camada_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 	 viewBox="-323 -39.9 337.8 149.8" style="enable-background:new -323 -39.9 337.8 149.8;" xml:space="preserve">
-<style type="text/css">
-	.st0{fill:#00A1C6;stroke:#000000;stroke-width:1.5;stroke-miterlimit:10;}
-</style>
 <polygon id="XMLID_224_" class="st0" points="10.5,21.7 10.5,21.2 10.5,-24.7 7.4,-26.8 8.8,-33.5 2,-31.3 -24.7,-31.3 -52.5,-31.3 
 	-55,-36.3 -57.2,-31.3 -91.4,-31.3 -95,-35.1 -98.6,-31.3 -140.6,-31.3 -141.7,-29.8 -142.8,-31.3 -180.1,-31.3 -182.2,-35.3 
 	-183.8,-31.3 -248.6,-31.3 -251.2,-38 -254.4,-31.3 -255.5,-31.3 -287,-31.3 -297,-31.3 -298.8,-35.5 -301.1,-31.3 -310,-31.3 

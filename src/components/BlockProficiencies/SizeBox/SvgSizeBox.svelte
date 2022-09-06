@@ -1,10 +1,7 @@
 
 <svg version="1.1" id="Camada_3" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 	 viewBox="-374 336.9 141.5 35.7" style="enable-background:new -374 336.9 141.5 35.7;" xml:space="preserve" class="svg_default">
-<style type="text/css">
-	.st0{fill:#00A1C6;stroke:#000000;stroke-width:1.5;stroke-miterlimit:10;}
-	.st1{fill:none;stroke:#000000;stroke-miterlimit:10;}
-</style>
+
 <g>
 	<polygon class="st0" points="-238.7,351.5 -238.7,340.4 -257.1,340.4 -261.3,337.8 -265.6,340.4 -284,340.4 -284,343.2 
 		-348.4,343.2 -360.2,343.2 -371.6,343.2 -371,353 -373,355.4 -371,357.6 -371.5,366.3 -355.8,366.3 -348.4,366.3 -284,366.3 
@@ -16,10 +13,6 @@
 
 
 <style>
-
-svg {
-
-}
 
 svg polygon {
   fill: var(--color-fill);

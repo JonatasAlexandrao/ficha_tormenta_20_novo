@@ -48,7 +48,7 @@
     top: 0;
     left: 0;
     width: 100%;
-    height: 5%;
+    height: .1rem;
     background-color: var(--color-stroke);
   }
 
@@ -59,7 +59,7 @@
     bottom: 0;
     left: 0;
     width: 100%;
-    height: 5%;
+    height: .1rem;
     background-color: var(--color-stroke);
   }
 
