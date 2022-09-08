@@ -90,8 +90,8 @@ thead tr th:nth-of-type(2) {
 
 tbody, tfoot {
   padding: 0 1rem;
-  border-left: var(--color-stroke) .25rem solid;
-  border-right: var(--color-stroke) .25rem solid;
+  border-left: var(--color-stroke) .3rem solid;
+  border-right: var(--color-stroke) .3rem solid;
   background-color: var(--color-fill);
 }
 

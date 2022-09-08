@@ -23,7 +23,7 @@
 	svg path {
 		fill: var(--color-fill);
 		stroke:var(--color-stroke);
-		stroke-width: 0.12rem;
+		stroke-width: 0.15rem;
   }
 
 </style>

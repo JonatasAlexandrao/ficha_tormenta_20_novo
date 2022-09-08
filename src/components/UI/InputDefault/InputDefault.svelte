@@ -79,7 +79,7 @@ readonly={readonly}
 
   .txt_input.-default,
   .txt_input.-level { 
-    width: 97%; height: 80%;
+    width: 97%; height: 85%;
    }
 
   .txt_input.-character { 

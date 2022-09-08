@@ -1,5 +1,8 @@
 :root { 
 
+
+  /* ========== Border ============ */
+  --border-width-default: .2rem;
   
   /* ========== Box Size ============ */
   --text-box-height-default: 3.2rem;
@@ -20,6 +23,7 @@
   --color-icon-light: rgb(222, 222, 222);
   
   /* ======== Variáveis ======== */
+  --border-width: var(--border-width-default);
   --font-size: var(--font-size-default);
   --text-box-height: var(--text-box-height-default);
 

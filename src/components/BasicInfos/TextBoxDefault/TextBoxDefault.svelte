@@ -15,10 +15,12 @@
 
 <div class="container_txt -{nameInput}">
 
-  <label class="txt_label -default -{nameInput}" for={nameInput}> {text} </label>
+  <div class="content -{nameInput}">
+    <label class="txt_label -default -{nameInput}" for={nameInput}> {text} </label>
 
-  <InputDefault nameInput={nameInput} caracterLength={caracterLength} bind:value={value} bind:valueLevel={valueLevel} />
-
+    <InputDefault nameInput={nameInput} caracterLength={caracterLength} bind:value={value} bind:valueLevel={valueLevel} />
+  </div>
+  
   <SvgLeftSide />
   <SvgRightSide />
 
@@ -41,31 +43,22 @@
     background-color: var(--color-fill);
   }
 
-  .container_txt::after {
-    content: '';
-    display: block;
-    position: absolute;
-    top: 0;
-    left: 0;
+  .container_txt .content {
     width: 100%;
-    height: .1rem;
-    background-color: var(--color-stroke);
-  }
+    height: 100%;
 
-  .container_txt::before {
-    content: '';
-    display: block;
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    height: .1rem;
-    background-color: var(--color-stroke);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-self: center;
+
+    border-top: var(--border-width) solid var(--color-stroke);
+    border-bottom: var(--border-width) solid var(--color-stroke);
   }
 
   .container_txt.-player { margin-bottom: .7rem;}
 
-  .container_txt.-class-level {
+  .content.-class-level {
     display: grid;
     grid-template-columns: 80% 20%;
   }
