@@ -30,9 +30,9 @@
 
 <main class="page">
 
-  <div class="teste">
-    <!-- <SkillsBox /> -->
-  </div>
+  <!-- <div class="teste">
+    
+  </div> -->
 
   <IconMenu />
   
