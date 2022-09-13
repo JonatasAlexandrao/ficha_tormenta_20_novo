@@ -11,17 +11,30 @@
   --font-size-default: 10px;
 
   /* ======== Variaveis Default ======== */
-  --color-font-default: rgb(23, 23, 23);
+  --color-font-default: #1b1b1b;
 
-  --color-background-default: rgb(100, 100, 100);
-  --color-fill-default: #ffffff;
-  --color-stroke-default: rgb(23, 23, 23);
-  --color-input-default: rgba(0, 0, 0, 0.15);
-  --color-input-selected-default: rgb(172, 50, 52);
-  --color-alert-default: rgb(172, 0, 0);
+  --color-background-default: #646464;
+  --color-fill-default: #e5e5e5;
+  --color-stroke-default: #171717;
+  --color-input-default: #00000026;
+  --color-input-selected-default: #ac3234;
+  --color-alert-default: #ac0000;
 
-  --color-icon-light: rgb(222, 222, 222);
-  
+  --color-icon-light: #dedede;
+
+  /* ======== Variaveis Dark Mode ======== */
+
+  --color-font-dark: #e6e6e6;
+
+  --color-background-dark: #202020;
+  --color-fill-dark: #6b6b6b;
+  --color-stroke-dark: #1b1b1b;
+  --color-input-dark: #d3d3d326;
+  --color-input-selected-dark: #ac3234;
+  --color-alert-dark: #ac0000;
+
+  --color-icon-dark: #1b1b1b;
+  /*======================================================================*/
   /* ======== Variáveis ======== */
   --border-width: var(--border-width-default);
   --font-size: var(--font-size-default);
@@ -40,29 +53,6 @@
 
 }
 
-.dark-mode:root {
-   /* ======== Variaveis dark ======== */
-
-  --color-font-dark: rgb(230, 230, 230);
-
-  --color-background-dark: rgb(0, 0, 0);
-  --color-fill-dark: #6b6b6b;
-  --color-stroke-dark: rgb(0, 0, 0);
-  --color-input-dark: rgba(211, 211, 211, 0.15);
-  --color-input-selected-dark: rgb(172, 50, 52);
-  --color-alert-dark: rgb(172, 0, 0);
-
-  --color-icon-dark: rgb(23, 23, 23);
-
-  /* ======== Variáveis ======== */
-  
-
-  --color-background: var(--color-background-dark);
-  --color-fill: var(--color-fill-dark);
-  --color-stroke: var(--color-stroke-dark);
-  --color-input: var(--color-input-dark);
-  --color-input-selected: var(--color-input-selected-dark);
-  --color-alert: var(--color-alert-dark);
-
+.-dark_mode:root {
   --color-icon: var(--color-icon-dark);
 }

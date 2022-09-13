@@ -96,7 +96,7 @@
     z-index: -10;
     opacity: .6;
     
-    background-image: url("./assets/images/Fundo-pagina.jpg");
+    background-image: url("./assets/images/Fundo-pagina.png");
     background-repeat: no-repeat;
     background-size: cover;
   }
