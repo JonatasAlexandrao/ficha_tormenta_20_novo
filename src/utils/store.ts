@@ -86,9 +86,9 @@ export const VAR_otherNumDefense = writable(0)
 
 /*Penalidade de armadura afeta as Perícias Acrobacia e Furtividade! */
 export const VAR_armorPenalty = derived([VAR_armor, VAR_shield], ([$VAR_armor, $VAR_shield]) => {
-  const negative = (num) => num < 0 ? num : -num
-  const armor = negative(parseInt($VAR_armor.penalty))
-  const shield = negative(parseInt($VAR_shield.penalty))
+  const negative = (num:number) => num < 0 ? num : -num
+  const armor = negative($VAR_armor.penalty)
+  const shield = negative($VAR_shield.penalty)
 
   return armor + shield
 })
@@ -122,10 +122,10 @@ export const VAR_totalWeight = derived(VAR_equipment, ($VAR_equipment) => {
   return $VAR_equipment.reduce((prevVal,element) => { return prevVal + parseFloat(element.weight) }, 0)
 })
 export const VAR_maxWeight = derived(VAR_attributesTotal, ($VAR_attributesTotal) => {
-  return (parseInt($VAR_attributesTotal[0].value)*3)
+  return ($VAR_attributesTotal[0].value * 3)
 })
 export const VAR_totalLifting = derived(VAR_attributesTotal, ($VAR_attributesTotal) => {
-  return (parseInt($VAR_attributesTotal[0].value)*10)
+  return ($VAR_attributesTotal[0].value * 10)
 })
 
 export const VAR_totalTibar = writable('0.00')

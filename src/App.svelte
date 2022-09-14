@@ -1,6 +1,4 @@
 <script lang="ts">
-
-  
   import BasicInfos from "./components/BasicInfos/BasicInfos.svelte";
   import ImageAndPoints from "./components/ImageAndPoints/ImageAndPoints.svelte";
   import Attributes from "./components/Attributes/Attributes.svelte";
@@ -10,11 +8,6 @@
   import Equipment from "./components/Equipment/Equipment.svelte";
   import SkillsBox from "./components/SkillsBox/SkillsBox.svelte";
   import IconMenu from "./components/IconMenu/IconMenu.svelte";
-
-
-
-
-
 
 
 
@@ -30,8 +23,7 @@
 
 <main class="page">
 
-  <!-- <div class="teste">
-    
+  <!-- <div class="teste">   
   </div> -->
 
   <IconMenu />
