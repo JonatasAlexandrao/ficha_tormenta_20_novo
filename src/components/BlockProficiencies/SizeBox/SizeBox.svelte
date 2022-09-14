@@ -28,12 +28,10 @@
     <ComboBox className="size" idName="size" list={list} returnValue={returnValue} />
   </div>
   
-
   <span class="text_modifiers">{$VAR_size.modifier}</span>
 
   <SvgSizeBox />
 </div>
-
 
 
 <style>
@@ -49,7 +47,7 @@
     grid-template-columns: 33% 33% 34%;
     padding: 0 4.5% 0 2%;
 
-    /*z-index: 2;*/
+    z-index: 2;
   }   
 
   .container_combo_box {

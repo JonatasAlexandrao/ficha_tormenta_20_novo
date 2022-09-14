@@ -76,15 +76,11 @@ function isNumber(num) {
 .defense_calc {
 
   --font-calcDefence-1: .7rem;
-
   --font-calcDefence-2: 1.1rem;
-
   --font-calcDefence-3: 1.7rem;
-
   --font-calcDefence-total: 3.3rem;
 
   position: relative;
-  /*width: 26rem;*/
   aspect-ratio: 3.1/1;
  
   display: grid;
@@ -94,7 +90,7 @@ function isNumber(num) {
   align-items: center;
 
   font-size: var(--font-calcDefence-1);
-  z-index: 2;
+  z-index: 3;
 }
 .container_defense_value {
   position: relative;

@@ -34,8 +34,8 @@
     position: relative;
     display: flex;
     justify-content: center;
-    align-items: center;
     justify-self: center;
+    align-items: center;
 
     width: 95%;
     height: var(--text-box-height);
@@ -49,9 +49,10 @@
 
     display: flex;
     justify-content: center;
-    align-items: center;
+    justify-items: center;
     justify-self: center;
-
+    align-items: center;
+    
     border-top: var(--border-width) solid var(--color-stroke);
     border-bottom: var(--border-width) solid var(--color-stroke);
   }

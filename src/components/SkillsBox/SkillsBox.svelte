@@ -88,6 +88,8 @@ thead tr th:nth-of-type(2) {
   font-size: 1.3rem;
 }
 
+tbody { z-index: 2; }
+
 tbody, tfoot {
   padding: 0 1rem;
   border-left: var(--color-stroke) .3rem solid;

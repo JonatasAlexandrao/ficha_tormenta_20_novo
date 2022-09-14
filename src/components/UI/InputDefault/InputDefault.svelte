@@ -77,10 +77,8 @@ readonly={readonly}
   }
   .txt_input.-max_points.s-1 { font-size: 2.3rem; }
 
-  .txt_input.-default,
-  .txt_input.-level { 
-    width: 97%; height: 85%;
-   }
+  .txt_input.-default { width: 97%; height: 85%; }
+  .txt_input.-level { width: 92%; height: 85%; }
 
   .txt_input.-character { 
     height: auto; 
