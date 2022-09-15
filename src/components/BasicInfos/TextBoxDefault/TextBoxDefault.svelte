@@ -8,7 +8,7 @@
   export let nameInput: string
   export let value: string = ''
   export let valueLevel: number = 1
-  export let caracterLength: number = 0
+  export let numVisibleCharacter: number = 0
 
 </script>
 
@@ -18,7 +18,7 @@
   <div class="content -{nameInput}">
     <label class="txt_label -default -{nameInput}" for={nameInput}> {text} </label>
 
-    <InputDefault nameInput={nameInput} caracterLength={caracterLength} bind:value={value} bind:valueLevel={valueLevel} />
+    <InputDefault nameInput={nameInput} numVisibleCharacter={numVisibleCharacter} bind:value={value} bind:valueLevel={valueLevel} />
   </div>
   
   <SvgLeftSide />

@@ -9,7 +9,7 @@
 
 <div class="container_txt -character">
 
-  <InputDefault className='character' nameInput='character' caracterLength={28} bind:value={value} />
+  <InputDefault className='character' nameInput='character' numVisibleCharacter={18} bind:value={value} fontSize={2.8} />
   <label class="txt_label -character" for="character">Personagem</label>
 
   <SvgCharacter />

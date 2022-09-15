@@ -18,11 +18,11 @@ let fontColor = getComputedStyle(page).getPropertyValue('--color-font')
 function restoreColors() {
 
   if(page.className === '-dark_mode') {
-    boxesBackgroundColor = getComputedStyle(page).getPropertyValue('--color-fill-dark')
-    boxLineColor = getComputedStyle(page).getPropertyValue('--color-stroke-dark')
-    sheetBackgroundColor = getComputedStyle(page).getPropertyValue('--color-background-dark')
-    inputColorSelected = getComputedStyle(page).getPropertyValue('--color-input-selected-dark')
-    fontColor = getComputedStyle(page).getPropertyValue('--color-font-dark')
+    boxesBackgroundColor = '#6b6b6b'
+    boxLineColor = '#1b1b1b'
+    sheetBackgroundColor = '#202020'
+    inputColorSelected = '#d3d3d326'
+    fontColor = '#e6e6e6'
   }
   else {
     boxesBackgroundColor = getComputedStyle(page).getPropertyValue('--color-fill-default')

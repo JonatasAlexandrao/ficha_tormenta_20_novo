@@ -1,83 +1,57 @@
 <script lang="ts">
-
   
   export let nameInput: string
   export let value: string
-    //$: fontSize = value.length > caracterLength ? calcFontSize() : ''
-  
+
   export let valueLevel: number = 1
   export let className: string = 'default'
-  export let caracterLength: number = 5
+
+  export let numVisibleCharacter = 13
+
   export let maxlength: number = 200
   export let readonly: boolean = false
   
-  
-  let fontSize = 2
+  export let fontSize = 1.8
+  let sizeDefault = fontSize
 
-  function calcFontSize() {
-    const result = value.length - caracterLength
-
-    if (result >= 6)
-      return 'small'
-    else
-      return `s-${result}`
-  }
 
   let previousValue = value
 
   function onKeyPress(e) {
+
     if(e.key === 'Enter') {
       e.target.blur()
     }
 
-    const sizeDefault = (this.size / 10)
-    const overflowed = this.clientWidth < this.scrollWidth
+    /* A fonte aumenta ou diminui 5% */
+    /* O valor minimo que a fonte pode ter é 70% do valor original */
+    /* Só vai voltar a aumentar o tamanho da fonte depois q tiver no máximo 6 caracteres a mais q o vizivel que são os 30% */
+
+    function rounding(calc:number) :number {
+      return +(parseFloat((calc).toString()).toFixed(2))
+    }
+
+    const variation =  rounding(sizeDefault * 0.05)
+    const fontMin = rounding(sizeDefault * 0.7)
     
-   // const increaseText = this.scrollWidth == this.clientWidth
-    const minimumSize = fontSize <= (sizeDefault/2)
-    const maximumSize = fontSize >= sizeDefault
+    const numOfCharactersIncreased = this.value.length > previousValue.length
+    const textBiggerThanTheBox = this.value.length > numVisibleCharacter
+    const numOfCharactersDecreased = this.value.length < previousValue.length
 
-    const reducedCharacters = previousValue.length > value.length
-
-    if(overflowed) {
-      console.log('diminue')
-      fontSize = (fontSize * .9)
-      console.log(fontSize)
-      console.log('minimumSize', minimumSize)
-      console.log('maximumSize', fontSize >= sizeDefault)
-      
-      /*if(minimumSize){
-        fontSize = (sizeDefault/1.5)
+    if(numOfCharactersIncreased) {
+      if(textBiggerThanTheBox) { 
+        fontSize = rounding(fontSize - variation)
+        if(fontMin > fontSize) { fontSize = fontMin }
       }
-      if(maximumSize){
-        
-        fontSize = sizeDefault
-        /*console.log('max')
-        console.log(fontSize)*//*
-      }*/
-
-      if(maximumSize) {
-          //fontSize = sizeDefault
-          console.log('wwwwww')
-          console.log(maximumSize, fontSize, sizeDefault)
-        }
-           
     }
-    else {
-      if(reducedCharacters) {
-        let amountErased = previousValue.length - value.length
-        console.log(amountErased)
 
-        fontSize = (fontSize * (1.1 * amountErased))
-        console.log('aumenta')
-        if(maximumSize) {
-          fontSize = sizeDefault
-          console.log('aqui')
-        }
-        
+    else if (numOfCharactersDecreased){
+      if(this.value.length <= (numVisibleCharacter + 6)){
+        fontSize = rounding(fontSize + variation)
       }
-
+      if(fontSize > sizeDefault) { fontSize = sizeDefault }
     }
+
     previousValue = this.value
 
   }

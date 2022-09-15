@@ -10,14 +10,14 @@
 <section class="basic_infos">
   <div class="line_1">
     <TextBoxCaracter bind:value={$VAR_character.name} />
-    <TextBoxDefault text='Jogador' nameInput='player' caracterLength={19} bind:value={$VAR_player} />
+    <TextBoxDefault text='Jogador' nameInput='player' numVisibleCharacter={18} bind:value={$VAR_player} />
   </div>
 
   <div class="line_2">
-    <TextBoxDefault text='Raça' nameInput='race' caracterLength={10} bind:value={$VAR_character.race} />
-    <TextBoxDefault text='Origem' nameInput='origin' caracterLength={15} bind:value={$VAR_character.origin} />
-    <TextBoxDefault text='Classe & Nível' nameInput='class-level' caracterLength={16} bind:value={$VAR_character.class} bind:valueLevel={$VAR_character.level} />
-    <TextBoxDefault text='Divindade' nameInput='divinity' caracterLength={10} bind:value={$VAR_character.divinity} />
+    <TextBoxDefault text='Raça' nameInput='race' numVisibleCharacter={10} bind:value={$VAR_character.race} />
+    <TextBoxDefault text='Origem' nameInput='origin' numVisibleCharacter={13} bind:value={$VAR_character.origin} />
+    <TextBoxDefault text='Classe & Nível' nameInput='class-level' numVisibleCharacter={14} bind:value={$VAR_character.class} bind:valueLevel={$VAR_character.level} />
+    <TextBoxDefault text='Divindade' nameInput='divinity' numVisibleCharacter={13} bind:value={$VAR_character.divinity} />
 
   </div>
 

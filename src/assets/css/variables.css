@@ -1,6 +1,5 @@
 :root { 
 
-
   /* ========== Border ============ */
   --border-width-default: .2rem;
   
@@ -22,18 +21,6 @@
 
   --color-icon-light: #dedede;
 
-  /* ======== Variaveis Dark Mode ======== */
-
-  --color-font-dark: #e6e6e6;
-
-  --color-background-dark: #202020;
-  --color-fill-dark: #6b6b6b;
-  --color-stroke-dark: #1b1b1b;
-  --color-input-dark: #d3d3d326;
-  --color-input-selected-dark: #ac3234;
-  --color-alert-dark: #ac0000;
-
-  --color-icon-dark: #1b1b1b;
   /*======================================================================*/
   /* ======== Variáveis ======== */
   --border-width: var(--border-width-default);
@@ -54,5 +41,5 @@
 }
 
 .-dark_mode:root {
-  --color-icon: var(--color-icon-dark);
+  --color-icon: #1b1b1b;
 }
