@@ -86,7 +86,7 @@ export const VAR_otherNumDefense = writable(0)
 
 /*Penalidade de armadura afeta as Perícias Acrobacia e Furtividade! */
 export const VAR_armorPenalty = derived([VAR_armor, VAR_shield], ([$VAR_armor, $VAR_shield]) => {
-  const negative = (num:number) => num < 0 ? num : -num
+  const negative = (num) => num < 0 ? num : -num
   const armor = negative($VAR_armor.penalty)
   const shield = negative($VAR_shield.penalty)
 

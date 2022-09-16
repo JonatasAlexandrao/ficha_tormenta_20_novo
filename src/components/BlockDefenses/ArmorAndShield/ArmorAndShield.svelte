@@ -1,45 +1,15 @@
 <script lang="ts">
-
+ 
 import { VAR_armor, VAR_shield } from '../../../utils/store'
 import InputDefault from '../../UI/InputDefault/InputDefault.svelte'
+import InputNumber from '../../UI/InputNumber/InputNumber.svelte';
 import SvgArmorAndShield from "./SvgArmorAndShield.svelte";
 
+function te() {
+  console.log($VAR_armor)
+}
 </script>
 
-<!-- <div class="armor_and_shield">
-  <div class="columns -name">
-    <span class="title -name">Armadura & Escudo</span>
-    <div class="container_input_armor_and_shield">
-      <InputDefault className="armor_and_shield" nameInput="name_armor_and_shield_1" caracterLength={12} bind:value={$VAR_armor.name} />
-    </div>
-    <div class="container_input_armor_and_shield">
-      <InputDefault className="armor_and_shield" nameInput="name_armor_and_shield_2" caracterLength={12} bind:value={$VAR_shield.name} />
-    </div>
-  </div>
-
-  <div class="columns -defense_num">
-    <span class="title">Defesa</span>
-    <div class="container_input_armor_and_shield">
-      <InputDefault className="armor_and_shield" nameInput="defense_num_armor_and_shield_1" caracterLength={2} bind:value={$VAR_armor.bonus} />
-    </div>
-    <div class="container_input_armor_and_shield">
-      <InputDefault className="armor_and_shield" nameInput="defense_num_armor_and_shield_2" caracterLength={2} bind:value={$VAR_shield.bonus} />
-    </div>
-  </div>
-
-  <div class="columns -penalty_num">
-    <span class="title">Penalidade</span>
-    <div class="container_input_armor_and_shield">
-      <InputDefault className="armor_and_shield" nameInput="penalty_num_armor_and_shield_1" caracterLength={2} bind:value={$VAR_armor.penalty} />
-    </div>
-    <div class="container_input_armor_and_shield">
-      <InputDefault className="armor_and_shield" nameInput="penalty_num_armor_and_shield_2" caracterLength={2} bind:value={$VAR_shield.penalty} />
-    </div>
-  </div>
-
-  <SvgArmorAndShield />
-  
-</div> -->
 <div class="armor_and_shield">
   <table>
     <thead>
@@ -49,23 +19,23 @@ import SvgArmorAndShield from "./SvgArmorAndShield.svelte";
         <th>Penalidade</th>
       </tr>
     </thead>
-    <tbody>
+    <tbody on:click={te}>
 
       <tr>
         <td>
-          <InputDefault className="armor_shield -description" nameInput="description_armor_and_shield_1" caracterLength={10} value={''} />
+          <InputDefault className="armor_shield -description" nameInput="description_armor_and_shield_1" numVisibleCharacter={10} bind:value={$VAR_armor.name} fontSize={1.4} />
         </td>
         <td>
-          <InputDefault className="armor_shield -defense_num" nameInput="defense_num_armor_and_shield_1" caracterLength={2} value={''} />
+          <InputNumber className="armor_shield -defense_num" nameInput="defense_num_armor_and_shield_1" numVisibleCharacter={2} bind:value={$VAR_armor.bonus} maxlength={3} />
         </td>
         <td>
-          <InputDefault className="armor_shield -penalty_num" nameInput="penalty_num_armor_and_shield_1" caracterLength={2} value={''} />
+          <InputDefault className="armor_shield -penalty_num" nameInput="penalty_num_armor_and_shield_1" numVisibleCharacter={2} bind:value={$VAR_armor.penalty} maxlength={3} />
         </td>
       </tr>
       <tr>
-        <td><InputDefault className="armor_shield -description" nameInput="description_armor_and_shield_2" caracterLength={10} value={''} /></td>
-        <td><InputDefault className="armor_shield -defense_num" nameInput="defense_num_armor_and_shield_2" caracterLength={2} value={''} /></td>
-        <td><InputDefault className="armor_shield -penalty_num" nameInput="penalty_num_armor_and_shield_2" caracterLength={2} value={''} /></td>
+        <td><InputDefault className="armor_shield -description" nameInput="description_armor_and_shield_2" numVisibleCharacter={10} bind:value={$VAR_shield.name} fontSize={1.4} /></td>
+        <td><InputDefault className="armor_shield -defense_num" nameInput="defense_num_armor_and_shield_2" numVisibleCharacter={2} bind:value={$VAR_shield.bonus} maxlength={3} /></td>
+        <td><InputDefault className="armor_shield -penalty_num" nameInput="penalty_num_armor_and_shield_2" numVisibleCharacter={2} bind:value={$VAR_shield.penalty} maxlength={3} /></td>
       </tr>
 
     </tbody>

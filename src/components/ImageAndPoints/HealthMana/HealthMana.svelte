@@ -13,13 +13,13 @@
 
 <div class="container -{subClass}">
   <div class="content_max_points">
-    <InputDefault className='max_points' nameInput='points_{subClass}' maxlength={3} caracterLength={2} bind:value={valuePoints} />
+    <InputDefault className='max_points' nameInput='points_{subClass}' maxlength={3} numVisibleCharacter={1} bind:value={valuePoints} fontSize={3.6} />
     <span class="text_max">Máximos</span>
   </div>
   <div class="content_historic">
     <span class="text_title">Pontos de {text}</span>
     <div class="container_input">
-      <InputDefault className='historic' nameInput='_historic_{subClass}' caracterLength={13} bind:value={valueHistoric} />
+      <InputDefault className='historic' nameInput='_historic_{subClass}' numVisibleCharacter={13} bind:value={valueHistoric} />
     </div>
     <span class="text_current">Atuais</span>
   </div>

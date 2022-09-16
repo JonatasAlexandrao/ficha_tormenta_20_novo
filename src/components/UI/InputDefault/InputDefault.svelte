@@ -5,16 +5,11 @@
 
   export let valueLevel: number = 1
   export let className: string = 'default'
-
   export let numVisibleCharacter = 13
-
   export let maxlength: number = 200
-  export let readonly: boolean = false
-  
-  export let fontSize = 1.8
+  export let readonly: boolean = false 
+  export let fontSize: number = 1.8
   let sizeDefault = fontSize
-
-
   let previousValue = value
 
   function onKeyPress(e) {
@@ -22,6 +17,7 @@
     if(e.key === 'Enter') {
       e.target.blur()
     }
+
 
     /* A fonte aumenta ou diminui 5% */
     /* O valor minimo que a fonte pode ter é 70% do valor original */

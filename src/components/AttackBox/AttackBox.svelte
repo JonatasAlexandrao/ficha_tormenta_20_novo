@@ -26,7 +26,7 @@ import SvgAttackBox from './SvgAttackBox.svelte';
         <tr>
           {#each line as item, i}
             <td>
-              <InputDefault className="attack" nameInput={item.nameInput} caracterLength={i >= 1 ? 2 : 10} bind:value={item.value} />
+              <InputDefault className="attack" nameInput={item.nameInput} fontSize={1.6} numVisibleCharacter={i >= 1 ? 1 : 8} bind:value={item.value} />
             </td>
           {/each}
         </tr>
