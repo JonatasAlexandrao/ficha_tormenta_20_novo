@@ -1,0 +1,21 @@
+
+<svg version="1.1" id="Camada_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 378.1 346.5" style="enable-background:new 0 0 378.1 346.5;" xml:space="preserve" class="svg_default">
+
+<polygon id="XMLID_291_" points="375.6,173.8 375.6,173.4 375.6,171.3 366.4,41.1 329.9,43.5 347.6,2.5 32.2,3.5 
+	47.9,43.5 12.6,41 2.5,171 2.5,173.3 2.5,173.8 2.5,174 2.5,175.5 12.6,305.5 47.9,305.5 32.2,343 347.6,344 329.9,303.5 
+	366.4,305.6 375.6,175.6 375.6,173.9 "/>
+</svg>
+
+<style>
+	svg {
+		width: 95%;
+	}
+
+	svg polygon {
+		fill: var(--color-fill);
+		stroke:var(--color-stroke);
+		stroke-width: 0.5rem;
+}
+
+</style>

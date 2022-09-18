@@ -1,5 +1,13 @@
-import '../public/reset.css'
-import '../public/global.css'
+
+
+
+
+import './assets/css/reset.css'
+import './assets/css/variables.css'
+import './assets/css/global.css'
+import './assets/css/mediaQuery.css'
+
+
 import App from './App.svelte'
 
 const app = new App({

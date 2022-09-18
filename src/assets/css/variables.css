@@ -1,0 +1,45 @@
+:root { 
+
+  /* ========== Border ============ */
+  --border-width-default: .2rem;
+  
+  /* ========== Box Size ============ */
+  --text-box-height-default: 3.2rem;
+  
+  /* ========== Font Size =========== */
+  --font-size-default: 10px;
+
+  /* ======== Variaveis Default ======== */
+  --color-font-default: #1b1b1b;
+
+  --color-background-default: #646464;
+  --color-fill-default: #e5e5e5;
+  --color-stroke-default: #171717;
+  --color-input-default: #00000026;
+  --color-input-selected-default: #ac3234;
+  --color-alert-default: #ac0000;
+
+  --color-icon-light: #dedede;
+
+  /*======================================================================*/
+  /* ======== Variáveis ======== */
+  --border-width: var(--border-width-default);
+  --font-size: var(--font-size-default);
+  --text-box-height: var(--text-box-height-default);
+
+  --color-font: var(--color-font-default);
+
+  --color-background: var(--color-background-default);
+  --color-fill: var(--color-fill-default);
+  --color-stroke: var(--color-stroke-default);
+  --color-input: var(--color-input-default);
+  --color-input-selected: var(--color-input-selected-default);
+  --color-alert: var(--color-alert-default);
+
+  --color-icon: var(--color-icon-light);
+
+}
+
+.-dark_mode:root {
+  --color-icon: #1b1b1b;
+}
