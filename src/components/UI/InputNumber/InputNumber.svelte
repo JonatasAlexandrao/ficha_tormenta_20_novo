@@ -4,51 +4,24 @@
   export let value: Number
 
   export let className: string = 'number'
-  export let numVisibleCharacter = 2
   export let maxlength: number = 3
   export let readonly: boolean = false 
   export let fontSize: number = 1.8
-  let sizeDefault = fontSize
-  let previousValue = value
 
-  function onKeyPress(e) {
-
+  function onKeyUp(e) {
     if(e.key === 'Enter') {
       e.target.blur()
     }
+  }
 
-    
-    /* A fonte aumenta ou diminui 5% */
-    /* O valor minimo que a fonte pode ter é 70% do valor original */
-    /* Só vai voltar a aumentar o tamanho da fonte depois q tiver no máximo 6 caracteres a mais q o vizivel que são os 30% */
+  function onInput() {
+    value = this.value.replace(/(0)(\d)/, '$2')
+    if(!value) { value = 0 }
 
-   /* function rounding(calc:number) :number {
-      return +(parseFloat((calc).toString()).toFixed(2))
+    /*======= MaxLength =======*/
+    if(this.value.length > this.maxLength) {
+      value = this.value.slice(0, this.maxLength)
     }
-
-    const variation =  rounding(sizeDefault * 0.05)
-    const fontMin = rounding(sizeDefault * 0.7)
-    
-    const numOfCharactersIncreased = this.value.length > previousValue.length
-    const textBiggerThanTheBox = this.value.length > numVisibleCharacter
-    const numOfCharactersDecreased = this.value.length < previousValue.length
-
-    if(numOfCharactersIncreased) {
-      if(textBiggerThanTheBox) { 
-        fontSize = rounding(fontSize - variation)
-        if(fontMin > fontSize) { fontSize = fontMin }
-      }
-    }
-
-    else if (numOfCharactersDecreased){
-      if(this.value.length <= (numVisibleCharacter + 6)){
-        fontSize = rounding(fontSize + variation)
-      }
-      if(fontSize > sizeDefault) { fontSize = sizeDefault }
-    }
-
-    previousValue = this.value*/
-
   }
 
 </script>
@@ -58,7 +31,8 @@
   name={nameInput} 
   bind:value={value}
   maxlength={maxlength}
-  on:keyup={onKeyPress}
+  on:keyup={onKeyUp}
+  on:input={onInput}
   readonly={readonly}
   type="number"
   style="font-size: {fontSize}rem"
@@ -80,6 +54,20 @@
   .txt_input:focus { outline: .2rem solid var(--color-input-selected); }
   
   .txt_input.-number { width: 97%; height: 85%; appearance: textfield;}
+
+  .txt_input.-armor_shield { 
+    border-bottom: .2rem solid var(--color-stroke);
+  }
+
+  input[type="number"]::-webkit-outer-spin-button,
+  input[type="number"]::-webkit-inner-spin-button {
+      -webkit-appearance: none;
+      margin: 0;
+  }
+
+  input[type="number"] {
+      -moz-appearance: textfield;
+  }
 
 
  
