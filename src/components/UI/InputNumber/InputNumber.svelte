@@ -3,10 +3,11 @@
   export let nameInput: string
   export let value: Number
 
-  export let className: string = 'number'
-  export let maxlength: number = 3
-  export let readonly: boolean = false 
-  export let fontSize: number = 1.8
+  export let className :string = 'number'
+  export let maxlength :number = 3
+  export let readonly :boolean = false 
+  export let fontSize :number = 1.8
+  export let minValue :number = 9
 
   function onKeyUp(e) {
     if(e.key === 'Enter') {
@@ -15,7 +16,7 @@
   }
 
   function onInput() {
-    value = this.value.replace(/(0)(\d)/, '$2')
+    value = this.value.replace(/(0)(\d)/g, '$2')
     if(!value) { value = 0 }
 
     /*======= MaxLength =======*/
@@ -55,9 +56,13 @@
   
   .txt_input.-number { width: 97%; height: 85%; appearance: textfield;}
 
+  .txt_input.-attribute { border-radius: 2rem;}
+
   .txt_input.-armor_shield { 
     border-bottom: .2rem solid var(--color-stroke);
   }
+
+  
 
   input[type="number"]::-webkit-outer-spin-button,
   input[type="number"]::-webkit-inner-spin-button {

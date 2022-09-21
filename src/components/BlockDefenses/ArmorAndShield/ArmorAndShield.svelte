@@ -27,15 +27,15 @@ import SvgArmorAndShield from "./SvgArmorAndShield.svelte";
           <InputNumber className="armor_shield -defense_num" nameInput="defense_num_armor_and_shield_1"bind:value={$VAR_armor.bonus} maxlength={3} />
         </td>
         <td>
-          <InputDefault className="armor_shield -penalty_num" nameInput="penalty_num_armor_and_shield_1" numVisibleCharacter={2} bind:value={$VAR_armor.penalty} maxlength={3} />
+          <InputNumber className="armor_shield -penalty_num" nameInput="penalty_num_armor_and_shield_1" bind:value={$VAR_armor.penalty} maxlength={3} />
         </td>
       </tr>
       <tr>
         <td><InputDefault className="armor_shield -description" nameInput="description_armor_and_shield_2" numVisibleCharacter={10} bind:value={$VAR_shield.name} fontSize={1.4} /></td>
 
-        <td><InputDefault className="armor_shield -defense_num" nameInput="defense_num_armor_and_shield_2" numVisibleCharacter={2} bind:value={$VAR_shield.bonus} maxlength={3} /></td>
+        <td><InputNumber className="armor_shield -defense_num" nameInput="defense_num_armor_and_shield_2" bind:value={$VAR_shield.bonus} maxlength={3} /></td>
         
-        <td><InputDefault className="armor_shield -penalty_num" nameInput="penalty_num_armor_and_shield_2" numVisibleCharacter={2} bind:value={$VAR_shield.penalty} maxlength={3} /></td>
+        <td><InputNumber className="armor_shield -penalty_num" nameInput="penalty_num_armor_and_shield_2" bind:value={$VAR_shield.penalty} maxlength={3} /></td>
       </tr>
 
     </tbody>

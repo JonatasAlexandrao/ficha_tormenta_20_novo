@@ -10,7 +10,7 @@
 <div class="displacement_box">
   <label class="txt_label -displacement" for="displacement">Deslocamento</label>
   <div class="container_input">
-    <InputDefault className="displacement" nameInput="displacement" caracterLength="5" bind:value={$VAR_displacement} />
+    <InputDefault className="displacement" nameInput="displacement" numVisibleCharacter={3} bind:value={$VAR_displacement} />
   </div>
 
   <SvgDisplacementBox />

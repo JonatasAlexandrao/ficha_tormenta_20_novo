@@ -1,9 +1,9 @@
 <script lang="ts">
   import { VAR_attributesModifier } from '../../../utils/store'
-  export let className = ''
-  export let idName = ''
-  export let textDefault = ''
-  export let returnValue = ()=>{}
+  export let className :string = ''
+  export let idName :string = ''
+  export let textDefault :string = ''
+  export let returnValue
   export let list = $VAR_attributesModifier
  
   let textInput = textDefault || ''

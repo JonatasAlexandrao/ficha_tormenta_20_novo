@@ -1,8 +1,9 @@
 <script lang="ts">
 
-import { VAR_infoAttack } from '../../utils/store'
-import InputDefault from '../UI/InputDefault/InputDefault.svelte'
-import SvgAttackBox from './SvgAttackBox.svelte';
+  import { VAR_infoAttack } from '../../utils/store'
+  import InputDefault from '../UI/InputDefault/InputDefault.svelte'
+  import InputNumber from '../UI/InputNumber/InputNumber.svelte';
+  import SvgAttackBox from './SvgAttackBox.svelte';
 
 </script>
 

@@ -1,23 +1,23 @@
 <script lang="ts">
-
-import { VAR_attributesModifier, VAR_armor, VAR_shield, VAR_otherNumDefense, VAR_armorPenalty } from '../../../utils/store'
-import ComboBox from '../../UI/ComboBox/ComboBox.svelte'
-import InputDefault from '../../UI/InputDefault/InputDefault.svelte'
-import SvgDefenceCalc from './SvgDefenceCalc.svelte';
-
-export let modifierDefault = 'Des'
-let index = 1
-let returnValue = (selected) => { index = selected }
-
-$: valueModifier = isNumber($VAR_attributesModifier[index].value)
-$: bonus = isNumber($VAR_armor.bonus) + isNumber($VAR_shield.bonus)
-$: other = isNumber($VAR_otherNumDefense)
-$: difficultyClass = (10 + (valueModifier + bonus + other))
-
-function isNumber(num) { 
-  return num ? parseInt(num) : 0
-}
  
+  import { VAR_attributesModifier, VAR_armor, VAR_shield, VAR_otherNumDefense, VAR_armorPenalty } from '../../../utils/store'
+  import ComboBox from '../../UI/ComboBox/ComboBox.svelte'
+  import InputNumber from '../../UI/InputNumber/InputNumber.svelte';
+  import SvgDefenceCalc from './SvgDefenceCalc.svelte';
+
+  export let modifierDefault = 'Des'
+  let index = 1
+  let returnValue = (selected:number) => { index = selected }
+
+  $: valueModifier = isNumber($VAR_attributesModifier[index].value)
+  $: bonus = isNumber($VAR_armor.bonus) + isNumber($VAR_shield.bonus)
+  $: other = isNumber($VAR_otherNumDefense)
+  $: difficultyClass = (10 + (valueModifier + bonus + other))
+
+  function isNumber(num) { 
+    return num ? parseInt(num) : 0
+  }
+  
 
 </script>
 
@@ -55,7 +55,7 @@ function isNumber(num) {
       <div class="column -others">
         <span class="content_title">Outros</span>
         <div class="value -input_other">
-          <InputDefault className="others" nameInput="defense_calc_others" bind:value={$VAR_otherNumDefense} />
+          <InputNumber className="others" nameInput="defense_calc_others" bind:value={$VAR_otherNumDefense} maxlength={2} />
         </div>
       </div>
 

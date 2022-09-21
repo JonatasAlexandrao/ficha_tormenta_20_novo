@@ -1,4 +1,6 @@
 <script lang="ts">
+  import InputNumber from "../InputNumber/InputNumber.svelte";
+
   
   export let nameInput: string
   export let value: string
@@ -63,7 +65,7 @@ style="font-size: {fontSize}rem"
 >
 
 {#if nameInput === "class-level"}
-  <input class="txt_input -level" id="level" maxlength="2" bind:value={valueLevel}>
+  <InputNumber className="txt_input -level" nameInput="level" maxlength={2} bind:value={valueLevel} />
 {/if}
 
 
@@ -94,9 +96,7 @@ style="font-size: {fontSize}rem"
   .txt_input.-max_points { 
     padding: 0;
   }
-  
-  .txt_input.-attribute { border-radius: 2rem;}
-  
+    
   .txt_input.-armor_shield { 
     border-bottom: .2rem solid var(--color-stroke);
   }

@@ -1,16 +1,14 @@
-<script>
-  import { onMount } from 'svelte';
-
+<script lang="ts">
 
   import { VAR_attributesModifier, VAR_character, VAR_skills, VAR_armorPenalty } from '../../../utils/store'
   import ComboBox from '../../UI/ComboBox/ComboBox.svelte' 
   import InputDefault from '../../UI/InputDefault/InputDefault.svelte'
   import SvgSkillTotal from './SvgSkillTotal.svelte'
 
-  export let text = ''
-  export let attributeDefault = 'For'
-  export let num = ''
-  export let className = ''
+  export let text :string = ''
+  export let attributeDefault :string = 'For'
+  export let num :string = ''
+  export let className :string = ''
 
   let checkBox = false
   let indexSelecting = 1
