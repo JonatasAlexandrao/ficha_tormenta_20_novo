@@ -1,8 +1,8 @@
 <script lang="ts">
-
+  
   import { VAR_attributesModifier, VAR_character, VAR_skills, VAR_armorPenalty } from '../../../utils/store'
   import ComboBox from '../../UI/ComboBox/ComboBox.svelte' 
-  import InputDefault from '../../UI/InputDefault/InputDefault.svelte'
+  import InputNumber from '../../UI/InputNumber/InputNumber.svelte';
   import SvgSkillTotal from './SvgSkillTotal.svelte'
 
   export let text :string = ''
@@ -72,7 +72,7 @@
   </td>
   <td class="skill_line_training"> {trained} </td>
   <td class="skill_line_others"> 
-    <InputDefault className="skill_other -{className}" nameInput="skill_other_{num}" bind:value={others} maxlength="3" />
+    <InputNumber className="skill_other -{className}" nameInput="skill_other_{num}" bind:value={others} maxlength={2} />
   </td>
 </tr>
 

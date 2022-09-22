@@ -1,13 +1,13 @@
 <script lang="ts">
   import InputDefault from '../../UI/InputDefault/InputDefault.svelte'
   import { VAR_equipment } from '../../../utils/store'
-  import InputNumber from '../../UI/InputNumber/InputNumber.svelte';
+  import InputWeight from '../../UI/InputWeight/InputWeight.svelte';
   export let num :number = 1
 </script>
 
 <div class="equipment_line">
   <InputDefault className="description" nameInput="description_{num}" numVisibleCharacter={30} bind:value={$VAR_equipment[num-1].item} />
-  <InputNumber className="weight" nameInput="weight_{num}" maxlength={4} bind:value={$VAR_equipment[num-1].weight} />
+  <InputWeight className="weight" nameInput="weight_{num}" maxlength={4} bind:value={$VAR_equipment[num-1].weight} />
 </div>
 
 

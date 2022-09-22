@@ -112,7 +112,7 @@ export const VAR_displacement = writable('')
 function equipmentInfo() {
   let equipment = []
   for (let i = 0; i < 15; i++) {
-    equipment[i] = {item: '', weight: 0} 
+    equipment[i] = {item: '', weight: 0.00} 
   }
   return equipment
 }

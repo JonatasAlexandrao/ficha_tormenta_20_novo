@@ -65,7 +65,7 @@ style="font-size: {fontSize}rem"
 >
 
 {#if nameInput === "class-level"}
-  <InputNumber className="txt_input -level" nameInput="level" maxlength={2} bind:value={valueLevel} />
+  <InputNumber className="level" nameInput="level" maxlength={2} bind:value={valueLevel} />
 {/if}
 
 
@@ -84,7 +84,6 @@ style="font-size: {fontSize}rem"
 
   .txt_input:focus { outline: .2rem solid var(--color-input-selected); }
   .txt_input.-default { width: 97%; height: 85%; }
-  .txt_input.-level { width: 92%; height: 85%; }
 
   .txt_input.-character { 
     height: auto; 
@@ -107,10 +106,6 @@ style="font-size: {fontSize}rem"
     background-color: transparent;
     cursor: default;
     outline: none;
-  }
-
-  .txt_input.-skill_other {
-    height: 80%;
   }
   
 </style>
