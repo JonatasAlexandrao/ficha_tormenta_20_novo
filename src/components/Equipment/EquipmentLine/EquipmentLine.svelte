@@ -7,7 +7,7 @@
 
 <div class="equipment_line">
   <InputDefault className="description" nameInput="description_{num}" numVisibleCharacter={30} bind:value={$VAR_equipment[num-1].item} />
-  <InputWeight className="weight" nameInput="weight_{num}" maxlength={4} bind:value={$VAR_equipment[num-1].weight} />
+  <InputWeight className="weight" nameInput="weight_{num}" bind:value={$VAR_equipment[num-1].weight} />
 </div>
 
 

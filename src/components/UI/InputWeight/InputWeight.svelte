@@ -2,10 +2,10 @@
   
   export let nameInput: string
   export let value: number
-  $: teste = value
+  //$: teste = value
 
   export let className :string = 'weight'
-  export let maxlength :number = 3
+  export let maxlength :number = 7
   export let readonly :boolean = false 
   export let fontSize :number = 1.8
 
@@ -13,6 +13,9 @@
     if(e.key === 'Enter') {
       e.target.blur()
     }
+    
+    //value = parseFloat(this.value)
+    //console.log(teste)
   }
 
   function onInput() {
@@ -27,9 +30,16 @@
       value = this.value.slice(0, this.maxLength)
     }*/
 
-    value = this.value
+    //this.value = this.value.replace(',', '.')
+    let formatValue :string
+    formatValue = this.value.replace(/(0)(\d)/g, '$2')
+    formatValue = this.value.replace(',', '.')
 
-    console.log(teste)
+    value = parseFloat(formatValue)
+
+    //console.log(teste)
+
+    
   }
 
 </script>
@@ -37,7 +47,7 @@
 <input class="txt_input -{className}" 
   id={nameInput} 
   name={nameInput} 
-  value={teste}
+  value = {0}
   maxlength={maxlength}
   on:keyup={onKeyUp}
   on:input={onInput}
@@ -61,7 +71,7 @@
 
   .txt_input:focus { outline: .2rem solid var(--color-input-selected); }
   
-  .txt_input.-weight { width: 97%; height: 85%; }
+ 
 
   
 </style>
