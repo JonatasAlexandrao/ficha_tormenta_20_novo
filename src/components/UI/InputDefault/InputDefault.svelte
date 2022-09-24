@@ -1,4 +1,6 @@
 <script lang="ts">
+  import InputNumber from "../InputNumber/InputNumber.svelte";
+
   
   export let nameInput: string
   export let value: string
@@ -63,7 +65,7 @@ style="font-size: {fontSize}rem"
 >
 
 {#if nameInput === "class-level"}
-  <input class="txt_input -level" id="level" maxlength="2" bind:value={valueLevel}>
+  <InputNumber className="level" nameInput="level" maxlength={2} bind:value={valueLevel} />
 {/if}
 
 
@@ -81,76 +83,29 @@ style="font-size: {fontSize}rem"
   }
 
   .txt_input:focus { outline: .2rem solid var(--color-input-selected); }
-  
-  .txt_input.s-1 { 
-    font-size: 1.8rem;
-  }
-  .txt_input.s-2 { 
-    font-size: 1.6rem;
-  }
-  .txt_input.s-3 { 
-    font-size: 1.5rem;
-  }
-  .txt_input.s-4 { 
-    font-size: 1.4rem; 
-  }
-  .txt_input.s-5 { 
-    font-size: 1.35rem; 
-  }
-  .txt_input.small { 
-    font-size: 1.25rem; 
-  }
-  .txt_input.-max_points.s-1 { font-size: 2.3rem; }
-
   .txt_input.-default { width: 97%; height: 85%; }
-  .txt_input.-level { width: 92%; height: 85%; }
 
   .txt_input.-character { 
     height: auto; 
     margin: .5% 5% 0;
     aspect-ratio: 9/1;
-    font-size: 2.4rem;
     overflow-x: hidden;
   }
 
   .txt_input.-max_points { 
-    font-size: 3.5rem;
     padding: 0;
   }
-  
-  .txt_input.-attribute { border-radius: 2rem;}
-  
+    
   .txt_input.-armor_shield { 
-    font-size: 1.6rem;
-    border-bottom: .2rem solid #000;
-  }
-
-  .txt_input.-armor_shield.s-4 { 
-    font-size: 1.5rem;
-  }
-  .txt_input.-armor_shield.s-5 { 
-    font-size: 1.4rem;
-  }
-  .txt_input.-armor_shield.small { 
-    font-size: 1.3rem;
+    border-bottom: .2rem solid var(--color-stroke);
   }
 
   .txt_input.-total_weight,
   .txt_input.-max_weight,
   .txt_input.-total_lifting {
-    font-size: 1.2rem;
     background-color: transparent;
     cursor: default;
     outline: none;
-  }
-
-  .txt_input.-total_lifting {
-    font-size: 1.4rem;
-  }
-
-  .txt_input.-skill_other {
-    height: 80%;
-    font-size: 1.4rem;
   }
   
 </style>

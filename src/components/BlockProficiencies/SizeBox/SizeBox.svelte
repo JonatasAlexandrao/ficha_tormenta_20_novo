@@ -14,7 +14,7 @@
     { name:'Colossal', modifier: '-10/+10' }
   ]
 
-  function returnValue(index) {
+  function returnValue(index:number) {
     $VAR_size.selected = list[index].name
     $VAR_size.modifier = list[index].modifier
   }

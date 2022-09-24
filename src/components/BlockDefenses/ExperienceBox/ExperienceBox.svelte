@@ -8,8 +8,8 @@
 <div class="experience_box">
 
   <div class="content">
-    <label class="txt_label -experience" for="experience">Pontos de Experiência</label>
-    <InputDefault className="experience" nameInput="experience" caracterLength={8} bind:value={$VAR_experience} />
+    <label class="txt_label -experience" for="experience">Pontos de Experiência</label >
+    <InputDefault className="experience" nameInput="experience" numVisibleCharacter={6} bind:value={$VAR_experience} />
   </div>
   
   

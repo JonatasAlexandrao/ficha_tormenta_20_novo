@@ -1,11 +1,10 @@
 <script lang="ts">
+  import InputNumber from '../../UI/InputNumber/InputNumber.svelte';
+  import SvgAttribute from './SvgAttribute.svelte'
 
-import InputDefault from '../../UI/InputDefault/InputDefault.svelte'
-import SvgAttribute from './SvgAttribute.svelte'
-
-export let name = ''
-export let value = ''
-export let modifier = ''
+  export let name = ''
+  export let value :number = 0
+  export let modifier :string = ''
 
 </script>
 
@@ -13,7 +12,7 @@ export let modifier = ''
   <span class="text_title">{name}</span>
   <label class="text_attribute" for="attribute_{name}"> {modifier} </label>
   <div class="container_input">
-    <InputDefault className="attribute" nameInput="attribute_{name}" maxlength={2} bind:value={value} />
+    <InputNumber className="attribute" nameInput="attribute_{name}" maxlength={2} bind:value={value} />
   </div>
 
   <SvgAttribute />

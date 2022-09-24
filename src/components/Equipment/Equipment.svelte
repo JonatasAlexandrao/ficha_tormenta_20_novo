@@ -26,21 +26,21 @@
     </div>
   
     <div class="content_equipment">
-      <EquipmentLine num=1 />
-      <EquipmentLine num=2 />
-      <EquipmentLine num=3 />
-      <EquipmentLine num=4 />
-      <EquipmentLine num=5 />
-      <EquipmentLine num=6 />
-      <EquipmentLine num=7 />
-      <EquipmentLine num=8 />
-      <EquipmentLine num=9 />
-      <EquipmentLine num=10 />
-      <EquipmentLine num=11 />
-      <EquipmentLine num=12 />
-      <EquipmentLine num=13 />
-      <EquipmentLine num=14 />
-      <EquipmentLine num=15 />
+      <EquipmentLine num={1} />
+      <EquipmentLine num={2} />
+      <EquipmentLine num={3} />
+      <EquipmentLine num={4} />
+      <EquipmentLine num={5} />
+      <EquipmentLine num={6} />
+      <EquipmentLine num={7} />
+      <EquipmentLine num={8} />
+      <EquipmentLine num={9} />
+      <EquipmentLine num={10} />
+      <EquipmentLine num={11} />
+      <EquipmentLine num={12} />
+      <EquipmentLine num={13} />
+      <EquipmentLine num={14} />
+      <EquipmentLine num={15} />
     </div>
     
     
@@ -175,7 +175,7 @@
     height: 25.7rem;
     overflow: hidden;
     overflow-y: auto;
-    padding-right: 2%;
+    padding: 1% 2%;
 
     display: grid;
     grid-auto-rows: 2.3rem;

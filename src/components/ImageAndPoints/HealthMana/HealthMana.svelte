@@ -1,19 +1,21 @@
 <script lang="ts">
+  import InputNumber from '../../UI/InputNumber/InputNumber.svelte';
+
 
   import InputDefault from '../../UI/InputDefault/InputDefault.svelte'
   import SvgHealthMana from './SvgHealthMana.svelte'
 
-  export let valuePoints = ''
-  export let valueHistoric = ''
-  export let text = ''
-  export let subClass = ''
+  export let valuePoints :number = 0
+  export let valueHistoric :string = ''
+  export let text :string = ''
+  export let subClass :string = ''
 
 </script>
 
 
 <div class="container -{subClass}">
   <div class="content_max_points">
-    <InputDefault className='max_points' nameInput='points_{subClass}' maxlength={3} numVisibleCharacter={1} bind:value={valuePoints} fontSize={3.6} />
+    <InputNumber className='max_points' nameInput='points_{subClass}' maxlength={3} bind:value={valuePoints} fontSize={3.4} />
     <span class="text_max">Máximos</span>
   </div>
   <div class="content_historic">
