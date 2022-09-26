@@ -1,9 +1,9 @@
 
 
-function maskMoney( inputValue:string ) :string {
+function maskMoney( inputValue:number ) :number {
 
   inputValue.replace(/[^0-9]/g, '')
-      let num = inputValue
+      let num = inputValue.toString()
 
       if(num == '' || num.length < 3) {
         num = '0,00'

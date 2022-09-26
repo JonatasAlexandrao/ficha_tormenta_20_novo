@@ -2,13 +2,13 @@
 
   import { maskMoney } from '../../../utils/maskFunctions'
   
-  export let nameInput: string
-  export let value: number
-  let weightValue: number = 0
-  $: if(value){
+  export let nameInput :string
+  export let value :number
+  /*let weightValue :number = 0
+  $: if(value) {
     weightValue = value
     console.log(weightValue)
-  }
+  }*/
 
 
   
@@ -27,9 +27,9 @@
 
   function onInput() {
 
-    this.value = maskMoney(this.value)
-    value = this.value
-
+    /*this.value = maskMoney(this.value)
+    value = this.value*/
+    value = maskMoney(value)
 
     //console.log(value)
     
@@ -41,7 +41,7 @@
 <input class="txt_input -{className}" 
   id={nameInput} 
   name={nameInput} 
-  bind:value = {weightValue}
+  bind:value={value}
   maxlength={maxlength}
   on:keyup={onKeyUp}
   on:input={onInput}
