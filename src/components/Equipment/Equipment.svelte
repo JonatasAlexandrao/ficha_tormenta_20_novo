@@ -4,9 +4,11 @@
 
   import EquipmentLine from './EquipmentLine/EquipmentLine.svelte';
   import InputDefault from '../UI/InputDefault/InputDefault.svelte'
+  import InputMoney from '../UI/InputMoney/InputMoney.svelte';
 
   import SvgEquipmentTop from './SvgEquipmentTop.svelte'
   import SvgEquipmentBottom from './SvgEquipmentBottom.svelte'
+  
 
   $: exceeded = $VAR_totalWeight > $VAR_maxWeight ? '-exceeded' : ''
 
@@ -48,9 +50,9 @@
   
       <div class="maximum_weight {exceeded}">
         <span>
-          <InputDefault nameInput="total_weight" className="total_weight" value={$VAR_totalWeight + 'Kg'} readonly={true} />
+          <InputDefault nameInput="total_weight" className="total_weight" value={$VAR_totalWeight.toString()} readonly={true} fontSize={1.2}/>
           <span>de</span>
-          <InputDefault nameInput="max_weight" className="max_weight" value={$VAR_maxWeight + 'Kg'} readonly={true} /> 
+          <InputDefault nameInput="max_weight" className="max_weight" value={$VAR_maxWeight + 'Kg'} readonly={true} fontSize={1.4}/> 
         </span>
         
         <label for="max_weight">Carga Máxima (3x Força)</label>
@@ -58,7 +60,7 @@
   
       <div class="total_lifting">
         <span>
-          <InputDefault nameInput="total_lifting" className="total_lifting" value={$VAR_totalLifting} readonly={true} />
+          <InputDefault nameInput="total_lifting" className="total_lifting" value={$VAR_totalLifting.toString()} readonly={true} />
         </span>
         <label for="total_lifting">Levantar (até 10x Força)</label>
       </div>
@@ -67,13 +69,13 @@
         <div class="container -tibar">
           <label for="total_tibar">T$:</label>
           <div class="container_input">
-            <InputDefault className="total_tibar" nameInput="total_tibar" value={$VAR_totalTibar} />
+            <InputMoney className="total_tibar" nameInput="total_tibar" value={$VAR_totalTibar} />
           </div>
         </div>
         <div class="container -tibarO">
           <label for="total_tibarO">TO:</label>
           <div class="container_input">
-            <InputDefault className="total_tibarO" nameInput="total_tibarO" value={$VAR_totalTibarO} />
+            <InputMoney className="total_tibarO" nameInput="total_tibarO" value={$VAR_totalTibarO} />
           </div>
           
         </div>
@@ -186,7 +188,7 @@
   /* === container_totals === */
   .container_totals {
     width: 100%;
-    margin-top: .5rem;
+    margin-top: 1.2rem;
     display: grid;
     grid-template-columns: 22% 22% 50%;
     gap: 3%;
@@ -207,7 +209,7 @@
 
   .maximum_weight > span {
     display: grid;
-    grid-template-columns: 43% 14% 43%;
+    grid-template-columns: 1fr 1rem 1fr;
     align-items: center;  
   }
 
@@ -224,22 +226,30 @@
 
   .total_money {
     width: 100%;
-    padding-top: 7%;
+    display: grid;
+    grid-template-rows: 45% 45%;
+    gap: 10%;
   }
 
   .total_money .container {
+
+    /*height: 3rem;*/
     display: grid;
     grid-template-columns: 1fr 85%;
     align-items: center;
   }
 
   .total_money .container.-tibar {
-    margin-bottom: 1rem;
+   /* margin-bottom: 1rem;*/
   }
 
   .total_money .container label {
     font-size: 1.4rem;
     justify-self: center;
+  }
+
+  .container_input {
+    height: 100%;
   }
 
 </style>
