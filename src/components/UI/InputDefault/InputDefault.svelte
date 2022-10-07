@@ -4,7 +4,6 @@
   
   export let nameInput: string
   export let value: string
-
   export let valueLevel: number = 1
   export let className: string = 'default'
   export let numVisibleCharacter = 13
@@ -19,7 +18,6 @@
     if(e.key === 'Enter') {
       e.target.blur()
     }
-
 
     /* A fonte aumenta ou diminui 5% */
     /* O valor minimo que a fonte pode ter é 70% do valor original */
@@ -106,6 +104,9 @@ style="font-size: {fontSize}rem"
     background-color: transparent;
     cursor: default;
     outline: none;
+    font-size: 1.2rem;
   }
+
+  
   
 </style>

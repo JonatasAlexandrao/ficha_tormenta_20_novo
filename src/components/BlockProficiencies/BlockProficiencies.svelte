@@ -27,6 +27,8 @@
     grid-template-columns: 100%;
     grid-template-rows: 11rem 5rem 5rem;
 
+    
+
   }
 
 </style>

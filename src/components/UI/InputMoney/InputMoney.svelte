@@ -4,17 +4,17 @@
   
   export let nameInput :string
   export let value :number
-  let formattedValue :string = '0'
+  let formattedValue :string = '0,00'
     $: if(formattedValue) { 
       let deformatt = formattedValue.replace('.', '')
       deformatt = deformatt.replace(',', '.')
       value = parseFloat(deformatt)
     }
 
-  export let className :string = 'weight'
-  export let maxlength :number = 6
+  export let className :string = 'money'
+  export let maxlength :number = 15
   export let readonly :boolean = false 
-  export let fontSize :number = 1.4
+  export let fontSize :number = 1.8
 
   function onKeyUp(e) {
     if(e.key === 'Enter') {
@@ -26,22 +26,6 @@
     formattedValue = maskDecimal(formattedValue)
   }
 
-  function addKg() {
-    if(formattedValue == '0,00' || formattedValue == '0') {
-      formattedValue = formattedValue.replace('0,00', '0')
-    }
-    else {
-      formattedValue = formattedValue + ' Kg'
-    }
-    
-  }
-  
-  function removeKg() {  
-    formattedValue = formattedValue.replace(' Kg', '')
-    
-    
-  }
-
 </script>
 
 <input class="txt_input -{className}" 
@@ -51,8 +35,6 @@
   maxlength={maxlength}
   on:keyup={onKeyUp}
   on:input={onInput}
-  on:click={removeKg}
-  on:blur={addKg}
   readonly={readonly}
   type="text"
   style="font-size: {fontSize}rem"

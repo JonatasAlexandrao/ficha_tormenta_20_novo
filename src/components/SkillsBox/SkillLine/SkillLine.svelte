@@ -7,15 +7,15 @@
 
   export let text :string = ''
   export let attributeDefault :string = 'For'
-  export let num :string = ''
+  export let num :number = 0
   export let className :string = ''
 
   let checkBox = false
   let indexSelecting = 1
   let returnValue = (selected) => { indexSelecting = selected }
 
-  $: $VAR_skills[num].halfLevel = parseInt($VAR_character.level / 2)
-  $: halfLevel = parseInt($VAR_character.level / 2)
+  $: $VAR_skills[num].halfLevel = Math.floor($VAR_character.level / 2)
+  $: halfLevel = Math.floor($VAR_character.level / 2)
 
   $: attributeValue = $VAR_attributesModifier[indexSelecting].value
 
@@ -26,20 +26,20 @@
   });
 
   let others = 0
-  $: $VAR_skills[num].others = parseInt(others)
+  $: $VAR_skills[num].others = Math.floor(others)
 
   let havePenalty = $VAR_skills[num].armorPenalty
   $: armorPenaltyValue = havePenalty ? $VAR_armorPenalty : 0
 
  
   let onlyTrained = $VAR_skills[num].onlyTrained
-  $: notTrained = onlyTrained & !checkBox ? '-only_trained' : ''
+  $: notTrained = onlyTrained && !checkBox ? '-only_trained' : ''
   
   /* ====== TOTAL ====== */
-  $: $VAR_skills[num].total = (attributeValue + trained + halfLevel + parseInt(others)) + armorPenaltyValue
+  $: $VAR_skills[num].total = (attributeValue + trained + halfLevel + Math.floor(others)) + armorPenaltyValue
 
   /* ==== Teste Penalty or Training ==== */
-  let title
+  let title :string
 
   let isArmorPenalty = text.indexOf('¤') > -1 ? true : false
   let isTrained = text.indexOf('⌂') > -1 ? true : false
@@ -54,10 +54,9 @@
 
   // ============== //
 
-
 </script>
 
-<tr class="skill_line {className}" >
+<tr class="skill_line {className}">
   <td class="skill_line_name"> 
     <input class="check_box {className}" id="check_box_{num}" type="checkbox" bind:checked={checkBox}> 
     <label class="check_label {notTrained}" for="check_box_{num}" title={title}>{text}</label>  
@@ -104,6 +103,7 @@
   opacity: .8;
   cursor: pointer;
   margin: 0 .5rem 0 0;
+  outline: none;
 }
 .skill_line .skill_line_name .check_label.-only_trained { 
   color: var(--color-alert);

@@ -24,7 +24,7 @@
     grid-template-columns: 100%;
     grid-template-rows: 8rem 9rem 4rem;
 
-    background-image: url("../../assets/images/Fundos/Fundo-Defesa.svg");
+    background-image: url("../../public/images/Fundos/Fundo-Defesa.svg");
     background-repeat: no-repeat;
     background-position: top;
     background-size: 100%;

@@ -119,7 +119,7 @@ function equipmentInfo() {
 export const VAR_equipment = writable(equipmentInfo())
 
 export const VAR_totalWeight = derived(VAR_equipment, ($VAR_equipment) => {
-  return $VAR_equipment.reduce((prevVal,element) => { return prevVal + parseFloat(element.weight) }, 0)
+  return $VAR_equipment.reduce((prevVal,element) => { return prevVal + element.weight }, 0)
 })
 export const VAR_maxWeight = derived(VAR_attributesTotal, ($VAR_attributesTotal) => {
   return ($VAR_attributesTotal[0].value * 3)
@@ -128,8 +128,8 @@ export const VAR_totalLifting = derived(VAR_attributesTotal, ($VAR_attributesTot
   return ($VAR_attributesTotal[0].value * 10)
 })
 
-export const VAR_totalTibar = writable('0.00')
-export const VAR_totalTibarO = writable('0.00')
+export const VAR_totalTibar = writable(0.00)
+export const VAR_totalTibarO = writable(0.00)
 
 /* ================ Skills ================ */
 
