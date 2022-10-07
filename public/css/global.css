@@ -1,0 +1,45 @@
+
+@font-face {
+  font-family: 'Tormenta20';
+  src: url('../font/Tormenta.ttf');
+}
+
+:root { 
+  font-size: 10px;
+  font-family: Quattrocento Sans, sans-serif;
+
+  display: flex;
+  justify-content: center;
+}
+
+body {
+  background-color: var(--color-background);
+  color: var(--color-font);
+
+  display: flex;
+  justify-content: center;
+
+  width: 80rem;
+
+}
+
+label { text-align: center; }
+
+.svg_default {
+  width: 100%;
+  
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+  
+  pointer-events: none;
+  z-index: -1;
+}
+
+.svg_default path, .svg_default polygon {
+  fill: var(--color-fill);
+  stroke:var(--color-stroke);
+  stroke-width: .1rem;
+}
+

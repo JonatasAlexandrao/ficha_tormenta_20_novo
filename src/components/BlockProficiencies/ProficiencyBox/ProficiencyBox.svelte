@@ -24,8 +24,9 @@ import SvgProficiencyBox from './SvgProficiencyBox.svelte';
 
     padding: 3.5% 0 7% 0;
     font-size: 1.2rem;
-    
+
     z-index: 1;
+    
   }
 
   .txt_label {

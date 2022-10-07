@@ -38,6 +38,11 @@
 
     margin-bottom: 3rem;
 
+    background-image: url("../../public/images/Fundos/Basic-Info.svg"); 
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-size: 95%;
+
   }
 
   .line_1 {

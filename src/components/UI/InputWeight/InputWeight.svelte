@@ -12,7 +12,7 @@
     }
 
   export let className :string = 'weight'
-  export let maxlength :number = 15
+  export let maxlength :number = 6
   export let readonly :boolean = false 
   export let fontSize :number = 1.4
 

@@ -13,7 +13,7 @@
 <style>
 
 svg { 
-  background-image: url("../../assets/images/Fundos/Fundo-Ataque.svg");
+  background-image: url("../../public/images/Fundos/Fundo-Ataque.svg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: 94%;

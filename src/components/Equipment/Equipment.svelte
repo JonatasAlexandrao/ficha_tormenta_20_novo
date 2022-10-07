@@ -50,7 +50,7 @@
   
       <div class="maximum_weight {exceeded}">
         <span>
-          <InputDefault nameInput="total_weight" className="total_weight" value={$VAR_totalWeight.toString()} readonly={true} fontSize={1.2}/>
+          <InputDefault nameInput="total_weight" className="total_weight" value={$VAR_totalWeight.toString().replace('.', ',')} readonly={true} fontSize={1.4}/>
           <span>de</span>
           <InputDefault nameInput="max_weight" className="max_weight" value={$VAR_maxWeight + 'Kg'} readonly={true} fontSize={1.4}/> 
         </span>
@@ -167,9 +167,13 @@
     
     display: grid;
     grid-template-columns: 80% 17%;
-    padding-bottom: .5%;
+    padding: 0 3% .5% 3%;
 
     font-size: 1.2rem;
+  }
+
+  .header_equipment span:nth-child(2) {
+    text-align: center;
   }
 
   .content_equipment {
@@ -188,9 +192,11 @@
   /* === container_totals === */
   .container_totals {
     width: 100%;
+    height: 6rem;
     margin-top: 1.2rem;
+    padding-left: 2%;
     display: grid;
-    grid-template-columns: 22% 22% 50%;
+    grid-template-columns: 26% 18% 50%;
     gap: 3%;
 
   }

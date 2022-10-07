@@ -1,13 +1,16 @@
 <script lang="ts">
 
   import HealthMana from "./HealthMana/HealthMana.svelte";
+  import CharacterImage from "./CharacterImage/CharacterImage.svelte";
   import { VAR_health, VAR_mana } from '../../utils/store';
+  
 
 </script>
 
 <section class="container">
   <div class="content_image">
-    <div class="image"></div>
+    <CharacterImage />
+    
   </div>
   
   <div class="content_health_mana">
@@ -36,12 +39,6 @@
     display: flex;
     justify-content: center;
     align-items: center;
-  }
-
-  .content_image .image {
-    width: 80%;
-    height: 95%;
-    border: .3rem solid #000;
   }
 
   .container .content_health_mana {
