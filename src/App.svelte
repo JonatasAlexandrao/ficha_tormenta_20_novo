@@ -8,7 +8,7 @@
   import BlockProficiencies from "./components/BlockProficiencies/BlockProficiencies.svelte";
   import Equipment from "./components/Equipment/Equipment.svelte";
   import SkillsBox from "./components/SkillsBox/SkillsBox.svelte";
-  
+
   
 </script>
 
@@ -17,6 +17,7 @@
   <IconMenu />
   
   <div class="container_logo">
+    <!-- <img class="logo" src="../public/images/logo-tormenta.png" alt="logo"> -->
     <img class="logo" src="../public/images/logo-tormenta.png" alt="logo">
   </div>
   <BasicInfos />

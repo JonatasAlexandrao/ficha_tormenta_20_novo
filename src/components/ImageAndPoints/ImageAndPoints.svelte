@@ -1,8 +1,12 @@
 <script lang="ts">
 
+  
+
   import HealthMana from "./HealthMana/HealthMana.svelte";
   import CharacterImage from "./CharacterImage/CharacterImage.svelte";
   import { VAR_health, VAR_mana } from '../../utils/store';
+
+  
   
 
 </script>

@@ -4,8 +4,9 @@ const path = require("path");
 function createWindow () {
  
   const mainWindow = new BrowserWindow({
-    width: 400,
-    height: 600
+    width: 570,
+    height: 770,
+    icon: './public/images/icone_tormenta_20.png'
   });
   mainWindow.loadFile(path.join(__dirname, "public/index.html"));
   mainWindow.webContents.openDevTools();
